@@ -16,96 +16,290 @@
             vertical-align: middle;
             padding-right: 8px;
         }
+        .custom-border-radius .ui-btn-icon-notext.ui-corner-all {
+            -webkit-border-radius: .3125em;
+            border-radius: .3125em;
+            margin-top: 4px;
+        }
+        .content_list{
+            padding: 15px;
+        }
     </style>
+    <script src="script.js"></script>
 </head>
 <body>
 
-<div data-role="page">
+<div data-role="page" id="index">
 
     <div data-role="header">
+        <div class="custom-border-radius">
+            <a href="#menu_contato" data-role="button" data-iconpos="notext" data-icon="bars"
+               data-shadow="false"
+               data-iconshadow="false" class="ui-btn-left"
+               class="ui-icon-nodisc">Menu</a>
+        </div>
         <center><img src="img/cabecalho.png"></center>
+        <div class="custom-border-radius">
+            <a href="#info" data-role="button" data-iconpos="notext" data-icon="info"
+               data-shadow="false" data-rel="dialog" data-transition="flip"
+               data-iconshadow="false" class="ui-btn-right"
+               class="ui-icon-nodisc">Info</a>
+        </div>
     </div>
     <!-- /header -->
 
+    <div data-role="panel" data-display="reveal" id="menu_contato">
+        <!-- panel content goes here -->
+        <form>
+            <ul data-role="listview" data-inset="false">
+                <center><li data-role="list-divider" data-theme="b"><h2>Contato</h2></li></center>
+                <li data-role="fieldcontain">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" value="">
+                </li>
+                <li data-role="fieldcontain">
+                    <label for="comentario">Comentário:</label>
+                    <textarea cols="40" rows="8" name="comentario" id="comentario"></textarea>
+                </li>
+            </ul>
+            <hr/>
+            <a href="#" data-role="button">Enviar</a>
+        </form>
+    </div><!-- /panel -->
+
     <div role="main" class="ui-content">
-        <ul data-role="listview" data-inset="true">
-            <li data-role="list-divider">
-                Friday, October 8, 2010
-                <span class="ui-li-count">
-                    2
-                </span>
-            </li>
-            <li>
-                <a href="index.html">
-                    <p class="my_icon_wrapper">
-                        <img src="img/semenge.png" width="80" height="80">
-                    </p>
-                    <h2>Stephen Weber</h2>
-                    <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
-                    <p>Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.</p>
-                    <p class="ui-li-aside"><strong>6:24</strong>PM</p>
-                </a>
-            </li>
-            <li>
-                <a href="index.html">
-                    <p class="my_icon_wrapper">
-                        <img src="img/semenge.png" width="80" height="80">
-                    </p>
-                    <h2>Stephen Weber</h2>
-                    <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
-                    <p>Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.</p>
-                    <p class="ui-li-aside"><strong>6:24</strong>PM</p>
-                </a>
-            </li>
-            <li>
-                <a href="index.html">
-                    <p class="my_icon_wrapper">
-                        <img src="img/semenge.png" width="80" height="80">
-                    </p>
-                    <h2>Stephen Weber</h2>
-                    <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
-                    <p>Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.</p>
-                    <p class="ui-li-aside"><strong>6:24</strong>PM</p>
-                </a>
-            </li>
-            <li data-role="list-divider">
-                Friday, October 8, 2010
-                <span class="ui-li-count">
-                    2
-                </span>
-            </li>
-            <li>
-                <a href="index.html">
-                    <p class="my_icon_wrapper">
-                        <img src="img/semenge.png" width="80" height="80">
-                    </p>
-                    <h2>Stephen Weber</h2>
-                    <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
-                    <p>Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.</p>
-                    <p class="ui-li-aside"><strong>6:24</strong>PM</p>
-                </a>
-            </li>
-            <li>
-                <a href="index.html">
-                    <p class="my_icon_wrapper">
-                        <img src="img/semenge.png" width="80" height="80">
-                    </p>
-                    <h2>Stephen Weber</h2>
-                    <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
-                    <p>Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.</p>
-                    <p class="ui-li-aside"><strong>6:24</strong>PM</p>
-                </a>
-            </li>
-        </ul>
+
+        <div data-role="tabs" id="tabs">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#one" data-ajax="false" id="tab1">1° Dia</a></li>
+                    <li><a href="#two" data-ajax="false" id="tab2">2° Dia</a></li>
+                    <li><a href="#three" data-ajax="false" id="tab3">3° Dia</a></li>
+                    <li><a href="#four" data-ajax="false" id="tab4">4° Dia</a></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div id="one">
+                <ul data-role="listview" data-inset="false">
+                    <li data-role="list-divider">
+                        Terça, 8 de Dezembro de 2015
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <p class="my_icon_wrapper">
+                                <img src="img/karlisonandre.png" width="80" height="80">
+                            </p>
+                            <div class="content_list">
+                                <h4>Karlisson André</h4>
+                                <p><strong>Dimensionamento de elementos especiais: piscinas</strong></p>
+                                <p>Teste de uso</p>
+                            </div>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <p class="my_icon_wrapper">
+                                <img src="img/rafaelafaciola.png" width="80" height="80">
+                            </p>
+                            <div class="content_list">
+                                <h4>Rafaela Faciola</h4>
+                                <p><strong>Risco em obras</strong></p>
+                            </div>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <p class="my_icon_wrapper">
+                                <img src="img/semenge.png" width="80" height="80">
+                            </p>
+                            <div class="content_list">
+                                <h4>Stephen Weber</h4>
+                                <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+                            </div>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="two">
+                <ul data-role="listview" data-inset="false">
+                    <li data-role="list-divider">
+                        Quarta, 9 de Dezembro de 2015
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <p class="my_icon_wrapper">
+                                <img src="img/semenge.png" width="80" height="80">
+                            </p>
+                            <div class="content_list">
+                                <h4>Stephen Weber</h4>
+                                <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+                            </div>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <p class="my_icon_wrapper">
+                                <img src="img/semenge.png" width="80" height="80">
+                            </p>
+                            <div class="content_list">
+                                <h4>Stephen Weber</h4>
+                                <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+                            </div>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <p class="my_icon_wrapper">
+                                <img src="img/semenge.png" width="80" height="80">
+                            </p>
+                            <div class="content_list">
+                                <h4>Stephen Weber</h4>
+                                <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+                            </div>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="three">
+                <ul data-role="listview" data-inset="false">
+                    <li data-role="list-divider">
+                        Quinta, 10 de Dezembro de 2015
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <p class="my_icon_wrapper">
+                                <img src="img/semenge.png" width="80" height="80">
+                            </p>
+                            <div class="content_list">
+                                <h4>Stephen Weber</h4>
+                                <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+                            </div>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <p class="my_icon_wrapper">
+                                <img src="img/semenge.png" width="80" height="80">
+                            </p>
+                            <div class="content_list">
+                                <h4>Stephen Weber</h4>
+                                <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+                            </div>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <p class="my_icon_wrapper">
+                                <img src="img/semenge.png" width="80" height="80">
+                            </p>
+                            <div class="content_list">
+                                <h4>Stephen Weber</h4>
+                                <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+                            </div>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="four">
+                <ul data-role="listview" data-inset="false">
+                    <li data-role="list-divider">
+                        Sexta, 11 de Dezembro de 2015
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <p class="my_icon_wrapper">
+                                <img src="img/semenge.png" width="80" height="80">
+                            </p>
+                            <div class="content_list">
+                                <h4>Stephen Weber</h4>
+                                <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+                            </div>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <p class="my_icon_wrapper">
+                                <img src="img/semenge.png" width="80" height="80">
+                            </p>
+                            <div class="content_list">
+                                <h4>Stephen Weber</h4>
+                                <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+                            </div>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <p class="my_icon_wrapper">
+                                <img src="img/semenge.png" width="80" height="80">
+                            </p>
+                            <div class="content_list">
+                                <h4>Stephen Weber</h4>
+                                <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+                            </div>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
     </div>
     <!-- /content -->
 
     <div data-role="footer" data-position="fixed">
-        <h4>&copy; 2015</h4>
+        <h4>&copy; SEMENGE 2015</h4>
     </div>
     <!-- /footer -->
 </div>
 <!-- /page -->
+
+<div data-role="page" id="info">
+    <div data-role="header">
+        <h2>Sobre o Evento</h2>
+    </div>
+    <div role="main" class="ui-content">
+        <center>
+            <img src="img/TESTE_CINZA.png" height="50">
+        </center>
+        <br/><hr/>
+        <p><strong>
+            3ª Semana de Engenharia do Campus do Sertão é um evento que está sendo organizado por uma comissão
+            formada por alunos e professores do eixo da tecnologia da Universidade Federal de Alagoas do Campus do
+            Sertão, em Delmiro Gouveia, a ser realizada entre os dias 08 a 11 de Dezembro de 2015. O evento tem como
+            tema as Multifaces da Engenharia. A Semenge contará com palestras, minicursos e apresentação de
+            trabalhos científicos, estes abrangendo diversas áreas do conhecimento.
+        </strong></p>
+        <br/><hr/>
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+                <center>
+                    <img src="img/1441339223_square-facebook.png" alt="facebook" width="40" height="40">
+                </center>
+            </div>
+            <div class="ui-block-b">
+                <center>
+                    <img src="img/1441339302_square-twitter.png" alt="twitter" width="40" height="40">
+                </center>
+            </div>
+            <div class="ui-block-c">
+                <center>
+                    <img src="img/1441339313_Instagram.png" alt="instagram" width="40" height="40">
+                </center>
+            </div>
+        </div><!-- /grid-c -->
+    </div>
+</div>
 
 </body>
 </html>

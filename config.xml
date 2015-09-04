@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.evento.semengeufal" version="1.0" xmlns="http://www.w3.org/ns/widgets"
+        xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Semenge 2015</name>
+    <description>
+        3ª Semana de Engenharia do Campus do Sertão é um evento que está sendo organizado por uma comissão formada por
+        alunos e professores do eixo da tecnologia da Universidade Federal de Alagoas do Campus do Sertão, em Delmiro
+        Gouveia, a ser realizada entre os dias 08 a 11 de Dezembro de 2015. O evento tem como tema as Multifaces da
+        Engenharia. A Semenge contará com palestras, minicursos e apresentação de trabalhos científicos, estes
+        abrangendo diversas áreas do conhecimento.
+    </description>
+    <author email="caiodotdev@gmail.com" href="http://www.caiomarinho.com">
+        Caio Marinho
+    </author>
+
+    <gap:plugin name="com.admob.google" source="plugins.cordova.io" version="2.0.14"/>
+
+    <!-- Icones -->
+    <icon src="img/ic_launcher_crop-web.png"/>
+    <!-- iPhone 6 / 6+ -->
+    <icon src="img/ic_launcher_180.png" gap:platform="ios" width="180" height="180"/>
+    <!-- iPhone / iPod Touch  -->
+    <icon src="img/ic_launcher_60.png" gap:platform="ios" width="60" height="60"/>
+    <icon src="img/ic_launcher_120.png" gap:platform="ios" width="120" height="120"/>
+    <!-- iPad -->
+    <icon src="img/ic_launcher_76.png" gap:platform="ios" width="76" height="76"/>
+    <icon src="img/ic_launcher_152.png" gap:platform="ios" width="152" height="152"/>
+    <icon src="img/ic_launcher_57.png" gap:platform="ios" width="57" height="57"/>
+    <icon src="img/ic_launcher_72.png" gap:platform="ios" width="72" height="72"/>
+    <!-- Settings Icon -->
+    <icon src="img/ic_launcher_29.png" gap:platform="ios" width="29" height="29"/>
+    <icon src="img/ic_launcher_58.png" gap:platform="ios" width="58" height="58"/>
+    <!-- Spotlight Icon -->
+    <icon src="img/ic_launcher_40.png" gap:platform="ios" width="40" height="40"/>
+    <icon src="img/ic_launcher_80.png" gap:platform="ios" width="80" height="80"/>
+    <!-- Android -->
+    <icon src="img/ic_launcher_ldpi.png" gap:platform="android" gap:qualifier="ldpi"/>
+    <icon src="img/ic_launcher_mdpi.png" gap:platform="android" gap:qualifier="mdpi"/>
+    <icon src="img/ic_launcher_hdpi.png" gap:platform="android" gap:qualifier="hdpi"/>
+    <icon src="img/ic_launcher_xhdpi.png" gap:platform="android" gap:qualifier="xhdpi"/>
+    <icon src="img/ic_launcher_xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi"/>
+    <!-- WIN PHONE  -->
+    <icon src="img/ic_launcher_win.png" gap:platform="winphone"/>
+    <icon src="img/ic_launcher_win_173.png" gap:platform="winphone" gap:role="background"/>
+
+    <!-- Splash Screens -->
+    <gap:splash src="img/splash_800.png" />
+    <!-- iPhone and iPod touch -->
+    <gap:splash src="img/splash_480.png" gap:platform="ios" width="320" height="480" />
+    <gap:splash src="img/splash_960.png" gap:platform="ios" width="640" height="960" />
+    <!-- iPhone 5 / iPod Touch (5th Generation) -->
+    <gap:splash src="img/splash_1136.png" gap:platform="ios" width="640" height="1136" />
+    <!-- iPhone 6 -->
+    <gap:splash src="img/splash_1334.png" gap:platform="ios" width="750" height="1334" />
+    <gap:splash src="img/splash_2208.png" gap:platform="ios" width="1242" height="2208" />
+    <!-- iPad -->
+    <gap:splash src="img/splash_1024.png" gap:platform="ios" width="768" height="1024" />
+    <!-- Retina iPad -->
+    <gap:splash src="img/splash_2048.png" gap:platform="ios" width="1536" height="2048" />
+    <gap:splash src="img/splash_320.png" gap:platform="android" gap:qualifier="ldpi" />
+    <gap:splash src="img/splash_480.png" gap:platform="android" gap:qualifier="mdpi" />
+    <gap:splash src="img/splash_800.png" gap:platform="android" gap:qualifier="hdpi" />
+    <gap:splash src="img/splash_1280.png" gap:platform="android" gap:qualifier="xhdpi" />
+    <!-- winphone -->
+    <gap:splash src="img/splash_800.png" gap:platform="winphone" />
+
+    <!-- Preferences -->
+    <preference name="orientation" value="portrait"/>
+    <supports-screens android:anyDensity="true" android:resizeable="true"
+                      android:smallScreens="true"
+                      android:normalScreens="true"
+                      android:largeScreens="true"
+                      android:xlargeScreens="true"/>
+
+    <content src="index.html"/>
+    <plugin name="cordova-plugin-whitelist" version="1"/>
+    <access origin="*"/>
+    <allow-intent href="http://*/*"/>
+    <allow-intent href="https://*/*"/>
+    <allow-intent href="tel:*"/>
+    <allow-intent href="sms:*"/>
+    <allow-intent href="mailto:*"/>
+    <allow-intent href="geo:*"/>
+    <platform name="android">
+        <allow-intent href="market:*"/>
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*"/>
+        <allow-intent href="itms-apps:*"/>
+    </platform>
+</widget>
