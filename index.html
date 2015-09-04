@@ -29,6 +29,7 @@
 </head>
 <body>
 
+<!-------------------------------------------------------------------------------------------------------- Index-->
 <div data-role="page" id="index">
 
     <div data-role="header">
@@ -47,7 +48,7 @@
         </div>
     </div>
     <!-- /header -->
-
+    <!------------------------------------------------------------------------------------------------MENU Contato-->
     <div data-role="panel" data-display="reveal" id="menu_contato">
         <!-- panel content goes here -->
         <form>
@@ -68,7 +69,7 @@
     </div><!-- /panel -->
 
     <div role="main" class="ui-content">
-
+        <!----------------------------------------------------------------------------- TABS -->
         <div data-role="tabs" id="tabs">
             <div data-role="navbar">
                 <ul>
@@ -80,7 +81,7 @@
             </div>
             <br/><br/>
             <div id="one">
-                <ul data-role="listview" data-inset="false">
+                <ul data-role="listview" data-inset="false" id="lista-1" class="lista">
                     <li data-role="list-divider">
                         Terça, 8 de Dezembro de 2015
                     </li>
@@ -124,7 +125,7 @@
                 </ul>
             </div>
             <div id="two">
-                <ul data-role="listview" data-inset="false">
+                <ul data-role="listview" data-inset="false" id="lista-2" class="lista">
                     <li data-role="list-divider">
                         Quarta, 9 de Dezembro de 2015
                     </li>
@@ -167,9 +168,33 @@
                 </ul>
             </div>
             <div id="three">
-                <ul data-role="listview" data-inset="false">
+                <ul data-role="listview" data-inset="false" id="lista-3" class="lista">
                     <li data-role="list-divider">
                         Quinta, 10 de Dezembro de 2015
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <p class="my_icon_wrapper">
+                                <img src="img/semenge.png" width="80" height="80">
+                            </p>
+                            <div class="content_list">
+                                <h4>Stephen Weber</h4>
+                                <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+                            </div>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <p class="my_icon_wrapper">
+                                <img src="img/semenge.png" width="80" height="80">
+                            </p>
+                            <div class="content_list">
+                                <h4>Stephen Weber</h4>
+                                <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+                            </div>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
                     </li>
                     <li>
                         <a href="index.html">
@@ -210,7 +235,7 @@
                 </ul>
             </div>
             <div id="four">
-                <ul data-role="listview" data-inset="false">
+                <ul data-role="listview" data-inset="false" id="lista-4" class="lista">
                     <li data-role="list-divider">
                         Sexta, 11 de Dezembro de 2015
                     </li>
@@ -263,6 +288,59 @@
     <!-- /footer -->
 </div>
 <!-- /page -->
+
+
+<!----------------------------------------------------------------------------------------------- View Item --->
+<div data-role="page" id="view_item">
+
+    <div data-role="header">
+        <center><img src="img/cabecalho.png"></center>
+        <div class="custom-border-radius">
+            <a href="#index" data-role="button" data-icon="back" data-rel="back" data-transition="slide"
+               class="ui-btn-right" data-iconpos="notext"
+               >Voltar</a>
+        </div>
+    </div>
+    <!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+            </div>
+            <div class="ui-block-b">
+                <center>
+                    <img src="img/rafaelafaciola.png" alt="twitter" width="100px">
+                </center>
+            </div>
+            <div class="ui-block-c">
+            </div>
+        </div><!-- /grid-c -->
+        <h3>Nome:</h3>
+        <p><strong>Rafaela Aciola</strong></p>
+        <h3>Descrição:</h3>
+        <p><strong>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.
+        </strong>
+        </p>
+        <h3>Horário:</h3>
+        <p><strong>Terça, 8 de Dezembro de 2015 às 14:20</strong></p>
+
+    </div>
+    <!-- /content -->
+
+    <div data-role="footer" data-position="fixed">
+        <h4>&copy; SEMENGE 2015</h4>
+    </div>
+    <!-- /footer -->
+</div>
+<!-- /page -->
+
+
+<!-------------------------------------------------------------------------------------------------------- DIALOG -->
 
 <div data-role="page" id="info">
     <div data-role="header">
