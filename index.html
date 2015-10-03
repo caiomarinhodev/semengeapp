@@ -2,11 +2,10 @@
 <html>
 <head>
     <title>SEMENGE 2015</title>
-
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <style>
         .my_icon_wrapper {
@@ -25,6 +24,7 @@
             padding: 15px;
         }
     </style>
+    <script type="text/javascript" src="cordova.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
@@ -39,7 +39,7 @@
                data-iconshadow="false" class="ui-btn-left"
                class="ui-icon-nodisc">Menu</a>
         </div>
-        <center><img src="img/cabecalho.png"></center>
+        <center><img src="images/cabecalho.png"></center>
         <div class="custom-border-radius">
             <a href="#info" data-role="button" data-iconpos="notext" data-icon="info"
                data-shadow="false" data-rel="dialog" data-transition="flip"
@@ -54,14 +54,11 @@
         <form>
             <ul data-role="listview" data-inset="false">
                 <center><li data-role="list-divider" data-theme="b"><h2>Contato</h2></li></center>
-                <li data-role="fieldcontain">
-                    <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome" value="">
-                </li>
-                <li data-role="fieldcontain">
-                    <label for="comentario">Comentário:</label>
-                    <textarea cols="40" rows="8" name="comentario" id="comentario"></textarea>
-                </li>
+                <i class="list-divider"></i>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" value="">
+                <label for="comentario">Comentário:</label>
+                <textarea cols="40" rows="8" name="comentario" id="comentario"></textarea>
             </ul>
             <hr/>
             <a href="#" data-role="button">Enviar</a>
@@ -88,7 +85,7 @@
                     <li>
                         <a href="index.html">
                             <p class="my_icon_wrapper">
-                                <img src="img/karlisonandre.png" width="80" height="80">
+                                <img src="images/karlisonandre.png" width="80" height="80">
                             </p>
                             <div class="content_list">
                                 <h4>Karlisson André</h4>
@@ -101,7 +98,7 @@
                     <li>
                         <a href="index.html">
                             <p class="my_icon_wrapper">
-                                <img src="img/rafaelafaciola.png" width="80" height="80">
+                                <img src="images/rafaelafaciola.png" width="80" height="80">
                             </p>
                             <div class="content_list">
                                 <h4>Rafaela Faciola</h4>
@@ -113,7 +110,7 @@
                     <li>
                         <a href="index.html">
                             <p class="my_icon_wrapper">
-                                <img src="img/semenge.png" width="80" height="80">
+                                <img src="images/semenge.png" width="80" height="80">
                             </p>
                             <div class="content_list">
                                 <h4>Stephen Weber</h4>
@@ -132,7 +129,7 @@
                     <li>
                         <a href="index.html">
                             <p class="my_icon_wrapper">
-                                <img src="img/semenge.png" width="80" height="80">
+                                <img src="images/semenge.png" width="80" height="80">
                             </p>
                             <div class="content_list">
                                 <h4>Stephen Weber</h4>
@@ -144,7 +141,7 @@
                     <li>
                         <a href="index.html">
                             <p class="my_icon_wrapper">
-                                <img src="img/semenge.png" width="80" height="80">
+                                <img src="images/semenge.png" width="80" height="80">
                             </p>
                             <div class="content_list">
                                 <h4>Stephen Weber</h4>
@@ -156,7 +153,7 @@
                     <li>
                         <a href="index.html">
                             <p class="my_icon_wrapper">
-                                <img src="img/semenge.png" width="80" height="80">
+                                <img src="images/semenge.png" width="80" height="80">
                             </p>
                             <div class="content_list">
                                 <h4>Stephen Weber</h4>
@@ -175,7 +172,7 @@
                     <li>
                         <a href="index.html">
                             <p class="my_icon_wrapper">
-                                <img src="img/semenge.png" width="80" height="80">
+                                <img src="images/semenge.png" width="80" height="80">
                             </p>
                             <div class="content_list">
                                 <h4>Stephen Weber</h4>
@@ -187,7 +184,7 @@
                     <li>
                         <a href="index.html">
                             <p class="my_icon_wrapper">
-                                <img src="img/semenge.png" width="80" height="80">
+                                <img src="images/semenge.png" width="80" height="80">
                             </p>
                             <div class="content_list">
                                 <h4>Stephen Weber</h4>
@@ -199,7 +196,7 @@
                     <li>
                         <a href="index.html">
                             <p class="my_icon_wrapper">
-                                <img src="img/semenge.png" width="80" height="80">
+                                <img src="images/semenge.png" width="80" height="80">
                             </p>
                             <div class="content_list">
                                 <h4>Stephen Weber</h4>
@@ -211,7 +208,7 @@
                     <li>
                         <a href="index.html">
                             <p class="my_icon_wrapper">
-                                <img src="img/semenge.png" width="80" height="80">
+                                <img src="images/semenge.png" width="80" height="80">
                             </p>
                             <div class="content_list">
                                 <h4>Stephen Weber</h4>
@@ -223,7 +220,7 @@
                     <li>
                         <a href="index.html">
                             <p class="my_icon_wrapper">
-                                <img src="img/semenge.png" width="80" height="80">
+                                <img src="images/semenge.png" width="80" height="80">
                             </p>
                             <div class="content_list">
                                 <h4>Stephen Weber</h4>
@@ -242,7 +239,7 @@
                     <li>
                         <a href="index.html">
                             <p class="my_icon_wrapper">
-                                <img src="img/semenge.png" width="80" height="80">
+                                <img src="images/semenge.png" width="80" height="80">
                             </p>
                             <div class="content_list">
                                 <h4>Stephen Weber</h4>
@@ -254,7 +251,7 @@
                     <li>
                         <a href="index.html">
                             <p class="my_icon_wrapper">
-                                <img src="img/semenge.png" width="80" height="80">
+                                <img src="images/semenge.png" width="80" height="80">
                             </p>
                             <div class="content_list">
                                 <h4>Stephen Weber</h4>
@@ -266,7 +263,7 @@
                     <li>
                         <a href="index.html">
                             <p class="my_icon_wrapper">
-                                <img src="img/semenge.png" width="80" height="80">
+                                <img src="images/semenge.png" width="80" height="80">
                             </p>
                             <div class="content_list">
                                 <h4>Stephen Weber</h4>
@@ -282,10 +279,6 @@
     </div>
     <!-- /content -->
 
-    <div data-role="footer" data-position="fixed">
-        <h4>&copy; SEMENGE 2015</h4>
-    </div>
-    <!-- /footer -->
 </div>
 <!-- /page -->
 
@@ -294,7 +287,7 @@
 <div data-role="page" id="view_item">
 
     <div data-role="header">
-        <center><img src="img/cabecalho.png"></center>
+        <center><img src="images/cabecalho.png"></center>
         <div class="custom-border-radius">
             <a href="#index" data-role="button" data-icon="back" data-rel="back" data-transition="slide"
                class="ui-btn-right" data-iconpos="notext"
@@ -309,7 +302,7 @@
             </div>
             <div class="ui-block-b">
                 <center>
-                    <img src="img/rafaelafaciola.png" alt="twitter" width="100px">
+                    <img src="images/rafaelafaciola.png" alt="twitter" width="100px">
                 </center>
             </div>
             <div class="ui-block-c">
@@ -332,10 +325,6 @@
     </div>
     <!-- /content -->
 
-    <div data-role="footer" data-position="fixed">
-        <h4>&copy; SEMENGE 2015</h4>
-    </div>
-    <!-- /footer -->
 </div>
 <!-- /page -->
 
@@ -348,7 +337,7 @@
     </div>
     <div role="main" class="ui-content">
         <center>
-            <img src="img/TESTE_CINZA.png" height="50">
+            <img src="images/TESTE_CINZA.png" height="50">
         </center>
         <br/><hr/>
         <p><strong>
@@ -362,17 +351,17 @@
         <div class="ui-grid-b">
             <div class="ui-block-a">
                 <center>
-                    <img src="img/1441339223_square-facebook.png" alt="facebook" width="40" height="40">
+                    <img src="images/1441339223_square-facebook.png" alt="facebook" width="40" height="40">
                 </center>
             </div>
             <div class="ui-block-b">
                 <center>
-                    <img src="img/1441339302_square-twitter.png" alt="twitter" width="40" height="40">
+                    <img src="images/1441339302_square-twitter.png" alt="twitter" width="40" height="40">
                 </center>
             </div>
             <div class="ui-block-c">
                 <center>
-                    <img src="img/1441339313_Instagram.png" alt="instagram" width="40" height="40">
+                    <img src="images/1441339313_Instagram.png" alt="instagram" width="40" height="40">
                 </center>
             </div>
         </div><!-- /grid-c -->
