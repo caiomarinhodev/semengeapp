@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/semenge.iml" filepath="$PROJECT_DIR$/.idea/semenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/semengeapp.iml" filepath="$PROJECT_DIR$/.idea/semengeapp.iml" />
     </modules>
   </component>
 </project>
