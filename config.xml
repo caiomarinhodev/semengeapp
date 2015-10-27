@@ -15,7 +15,7 @@
     <!-- Splash Screens -->
     <!-- Android -->
     <preference name="phonegap-version" value="3.7.0" />
-    <icon src="images/Icon.png" />
+    <icon src="images/mipmap-xxhdpi/ic_launcher.png" />
     <icon src="images/mipmap-mdpi/ic_launcher.png" gap:platform="android" gap:qualifier="mdpi"/>
     <icon src="images/mipmap-hdpi/ic_launcher.png" gap:platform="android" gap:qualifier="hdpi"/>
     <icon src="images/mipmap-xhdpi/ic_launcher.png" gap:platform="android" gap:qualifier="xhdpi"/>

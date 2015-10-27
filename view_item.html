@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>SEMENGE 2015</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        .my_icon_wrapper {
+            float: left;
+            width: 80px; height: 80px;
+            text-align: center;
+            vertical-align: middle;
+            padding-right: 8px;
+        }
+        .custom-border-radius .ui-btn-icon-notext.ui-corner-all {
+            -webkit-border-radius: .3125em;
+            border-radius: .3125em;
+            margin-top: 4px;
+        }
+        .content_list{
+            padding: 15px;
+        }
+
+        .plinha{
+            font-size: 14px;
+        }
+    </style>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="view_item">
+
+    <div data-role="header">
+        <center><img src="images/cabecalho.png"></center>
+        <div class="custom-border-radius">
+            <a href="index.html" data-role="button" data-icon="back" data-rel="back" data-transition="slide"
+               class="ui-btn-right" data-iconpos="notext"
+                    >Voltar</a>
+        </div>
+    </div>
+    <!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+            </div>
+            <div class="ui-block-b">
+                <center>
+                    <img id="image_prof" src="images/user.png" alt="twitter" width="100px">
+                </center>
+            </div>
+            <div class="ui-block-c">
+            </div>
+        </div><!-- /grid-c -->
+        <h3>Nome:</h3>
+        <center><p><strong id="nome_prof">a</strong></p></center>
+        <hr/>
+        <p><strong id="bio_prof">
+        </strong>
+        </p>
+
+    </div>
+    <!-- /content -->
+
+</div>
+<!-- /page -->
+
+</body>
+</html>
