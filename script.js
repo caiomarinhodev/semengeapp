@@ -2,14 +2,56 @@
  * Created by Caio on 03/09/2015.
  */
 var selected = {};
+var selected_curse = {};
+var curses = [
+    {
+        titulo:"Certificações Ambientais e Sustentabilidade na Construção Civil",
+        descricao: "Este minicurso tem como objetivo apresentar aos participantes o panorama atual no que tange a sustentabilidade em edificações e os indicadores que hoje regulamentam a prática de projeto e produção de construções sustentáveis no cenário nacional e mundial. A Sustentabilidade vem sendo discutida há pelo menos três décadas e neste contexto a Indústria da Construção Civil vem incorporando aspectos que possibilitam a produção de edificações mais responsáveis do ponto de vista ambiental, social, econômico e político. Certificações como o LEED, AQUA, SELO PROCEL entre outros foram bem aceitos pelo mercado imobiliário e estão sendo incorporados no processo de projeto e produção de edifícios; ao mesmo tempo em que a ABNT lançou e regulamentou a NBR15575 que estabelece critérios e requisitos para o desempenho de edificações. Diante do exposto, pretende-se ao final do curso realizar um exercício de certificação em uma edificação para melhor compreensão dos conceitos apresentados."
+    },
+    {
+        titulo:"Irrigação paisagística",
+        descricao: "O minicurso irá abordar as diversas técnicas para a irrigação de jardins e gramados. Serão estudados os tipos de aspersores e gotejadores, válvulas controladoras de fluxo e painéis de automação. Além disso, serão demonstrados e realizados os cálculos para setorização das áreas e dimensionamento hidráulico do sistema."
+    },
+    {
+        titulo:"Risco em obras",
+        descricao: "Apresentar os conceitos e metodologias preventivas de acordo com a NR-18 que devem ser praticadas em obras de construção civil para evitar acidentes de trabalho."
+    },
+    {
+        titulo:"Dimensionamento geotécnico e estrutural de fundações diretas",
+        descricao: "A proposta do minicurso DIMENSIONAMENTO GEOTÉCNICO E ESTRUTURAL DE FUNDAÇÕES DIRETAS é apresentar os conceitos básicos de pressão admissível dos solos e recalques que seria o dimensionamento geotécnico, e numa segunda etapa apresentar o dimensionamento estrutural passando alguns exemplos práticos de projetos."
+    },
+    {
+        titulo:"Ferramentas estatísticas com o uso de planilhas eletrônicas",
+        descricao: "Na época em eu vivemos, cresce a necessidade de avaliar e reconhecer se uma evidência estatística apoia uma conclusão apresentada. Além disso, o uso da estatística incentiva a reagir de modo inteligente às informações que lê ou escuta, passando a refletir, analisar e questionar as informações encontradas. O uso de estatísticas é necessário à análise resultados visados pelos pesquisadores, incluindo estudantes. As planilhas eletrônicas, como o Microsoft Excel, possuem ferramentas especiais para análise dos dados simples e coletados, por meio da estatística descritiva."
+    },
+    {
+        titulo:"Pontes",
+        descricao: "Consiste em um apanhado geral dos principais tópicos a serem tratados sobre pontes e estimular os alunos a usar o Ftool para brincar um pouco com os sistemas estruturais e as linhas de influencia. Esse software será abordado porque os softwares de dimensionamento possuem um grau de complexidade que não dá pra serem abordados em pouco tempo."
+    },
+    {
+        titulo:"EPANET como ferramenta para simulação de redes de distribuição de água.",
+        descricao: "Execução de simulações estáticas e dinâmicas do comportamento hidráulico da água em redes de distribuição pressurizada através de programa computacional como ferramenta de apoio."
+    },
+    {
+        titulo:"Análise de Valor Agregado para Gerenciamento de Projetos.",
+        descricao: "A Gestão de Valor Agregado (GVA) é considerada como um dos melhores métodos para analisar a evolução dos custos e prazos de um projeto devido à sua eficiência. Ela integra o escopo, o cronograma e os recursos para então medir o desempenho e o progresso do que foi planejado."
+    },
+    {
+        titulo:"Segurança no trabalho",
+        descricao: "O minicurso tratará sobre a importância da aplicação das normas regulamentadoras do ministério do trabalho e emprego no ambiente de trabalho, afim de evitar possíveis acidentes de trabalho, danos materiais e multas."
+    }
+
+];
 var lista = [
     {
         nome: "Dr. Fernando Sa Cavalcanti",
+        curso: 0,
         image: "images/Perfil_Fernando_Cavalcanti.jpg",
         bio: "Possui Graduacao em Arquitetura e Urbanismo pela Universidade Federal de Alagoas (2007), Mestrado em Construcao Civil pela Universidade Federal de Sao Carlos (2010), Doutorado em Arquitetura e Urbanismo pela Universidade de Sao Paulo (2013) e Curso Tecnico em Edificacoes pelo Centro Federal de Educacao Tecnologica de Alagoas (2000). Atualmente e Professor Adjunto da Universidade Federal de Alagoas na area de Linguagem e Representacao e desenvolve pesquisa com enfase em Projeto e Tecnologia de Arquitetura e Urbanismo e Conforto Ambiental, atuando principalmente nos seguintes temas: Projeto Arquitetonico, Ventilacao Natural, Desempenho Termico de Edificacoes, Arquitetura Bioclimatica e Simulacao Computacional."
     },
     {
         nome: "Dr. Allan Cunha de Barros",
+        curso: 1,
         image: "images/alancunha.jpg",
         bio: "Possui graduacao em Engenharia Agronomica pela Universidade Federal de Sergipe (2006) e mestrado e doutorado em Irrigacao e Drenagem pela ESALQ-USP ( 2011). Atualmente e professor da Universidade Federal de Alagoas (UFAL). Tem experiencia na area de Engenharia Agricola, com enfase em Irrigacao e Drenagem, atuando principalmente nos seguintes temas: qualidade da irrigacao, entupimento de emissores, manejo da irrigacao, TDR, simulacao de crescimento de culturas."
     },
@@ -30,16 +72,19 @@ var lista = [
     },
     {
         nome: "Dr. Rafaela Faciola",
+        curso: 2,
         image: "images/rafaelafaciola.png",
         bio: " Formada em Engenharia Civil pela Faculdade Ideal - FACI (2006). Mestre em Geotecnia pela Universidade de Sao Paulo - Escola de Engenharia de Sao Carlos (2009). Doutora em Geotecnia pela Universidade de Sao Paulo - Escola de Engenharia de Sao Carlos (2014). Professora Adjunta na Universidade Federal de Alagoas - UFAL, Campus do Sertao, no curso de Engenharia Civil, atuando nas areas de mecanica dos solos e fundacoes. Atua na area da Geotecnia Ambiental, com temas relacionados disposicao de residuos solidos, aterros sanitarios e solos expansivos."
     },
     {
         nome: "Dr. Juliane Marques",
+        curso: 3,
         image: "images/Juliane_Marques_QEXTC1O.jpg",
         bio: "Possui graduacao em Engenharia Civil pela Universidade Federal de Alagoas, mestrado em Engenharia Civil - USP - Escola de Engenharia de Sao Carlos e doutorado em Engenharia Civil pela Escola Politecnica da Universidade de Sao Paulo. Atualmente e professora adjunto A da Universidade Federal de Alagoas - UFAL, e responsavel tecnico da AGM Geotecnica Ltda. Tem experiencia na area de Engenharia Civil, com enfase em Engenharia de Solos / Geotecnia, atuando principalmente nos seguintes temas: fundacoes profundas e fundacoes superficiais, estacas moldadas in loco com bulbos, estacas escavadas a seco com aneis, provas de carga, reforco de fundacoes, instrumentacao em profundidade e pratica de fundacoes."
     },
     {
         nome: "Msc. Alexandre Nascimento de Lima",
+        curso: 4,
         image: "images/Alexandre_Lima_3muXQPc_OkXylbk.jpg",
         bio: "Possui graduacao em Engenharia Civil pela Universidade Federal de Alagoas e Mestrado em Engenharia Civil area Estruturas. Atualmente e Professor Assistente na area de Materiais da Universidade Federal de Alagoas, no Campus do Sertao. Tem experiencia na area de Engenharia Civil, com enfase em Materiais e Componentes de Construcao e estruturas de concreto armado. Atualmente e Coordenador do Curso de Engenharia de Producao do Campus do Sertao."
     },
@@ -50,16 +95,19 @@ var lista = [
     },
     {
         nome: "Dr. Aline Ramos",
+        curso: 5,
         image: "images/Aline_Ramos_nM5yXAJ.jpg",
         bio: "Possui graduacao em Engenharia Civil pela Universidade Federal de Alagoas (1987), mestrado em Engenharia Civil (Engenharia de Estruturas) pela Universidade de Sao Paulo (1992) e doutorado em Engenharia Civil (Engenharia de Estruturas) pela Universidade de Sao Paulo (2002). Atualmente e professor associado da Universidade Federal de Alagoas, e desenvolve pesquisas nas linhas: mecanica das estruturas, estruturas de concreto (moldado no local e pre-moldado), coordenacao modular e habitacao de interesse social. Participou da fundacao da Associacao Rede Metrologica de Alagoas-RMAL, atuou como Diretora Tecnica e atualmente exerce o cargo de Presidente da mesma. Exerce ainda o cargo de Presidente do Instituto de Desenvolvimento Cientifico e Tecnologico de Alagoas-ICTAL, orgao resonsavel pela gestao do Parque Tecnologico de Alagoas."
     },
     {
         nome: "Dr. Antonio Netto",
+        curso: 6,
         image: "images/Antonio_Netto_mNyh1HC.jpg",
         bio: "Possui graduacao em Engenharia Civil pela Universidade Federal de Alagoas (UFAL) e Pos-graduacao (Mestrado e Doutorado) pela Escola de Engenharia de Sao Carlos - EESC da Universidade de Sao Paulo - USP. Tem experiencia na area de Engenharia Ambiental, com enfase em tratamento de aguas residuarias, atuando principalmente nos seguintes temas: licenciamento ambiental, projeto e execucao de estacoes de tratamento de agua e esgoto, tratamento combinado anaerobio-aerobio de esgoto sanitario, reator de leito fixo operado de modo continuo e avaliacao de projetos de melhorias habitacionais e sanitarias."
     },
     {
         nome: "Msc. Dalgoberto Miquilino",
+        curso: 7,
         image: "images/Dalgoberto_Miquilino_ihOU1MW.jpg",
         bio: "Graduado em Sistemas de Informacao pela Faculdade de Alagoas, Mestre em Modelagem Computacional do Conhecimento pela Universidade Federal de Alagoas-UFAL. Pesquisador de areas relacionadas a Gerenciamento de Projetos, Educacao a distancia, usabilidade e AVA. Experiencia em EAD como tutor de sala, tutor-online e professor. Experiencia em Docencia no Ensino Superior tendo atuado como professor nas areas de tecnologia da informacao, gestao de negocios, gestao educacional e gerenciamento de projetos em diversas instituicoes de ensino como Faculdade Mauricio de Nassau, FGV, UNOPAR, UFAL-UAB, a nivel de graduacao e pos-graduacao. Possui experiencia em Gestao educacional onde ja atuou como coordenador de graduacao e Coordenador-Geral de Pos-graduacao na Faculdade Mauricio de Nassau. Trabalha com projetos web, arquitetura da informacao, gerencia de projetos e ministra aulas ha 15 anos. Atualmente atua como docente Assistente na Universidade Federal de Alagoas-Campus do Sertao, lecionando disciplinas na area de Computacao, Sistemas de Informacao e Gerenciamento de Riscos nos cursos de Engenharia civil e Engenharia de Producao."
     },
@@ -70,6 +118,7 @@ var lista = [
     },
     {
         nome: "Eng. Joao Guilherme Lessa Rocha",
+        curso: 8,
         image: "images/user.png",
         bio: "Possui graduacao em Engenharia Civil pelo Centro Universitario CESMAC (2014). Pos graduado em Engenharia de Seguranca do Trabalho pela Faculdade Figueiredo Costa. Coordenador Tecnico da empresa SOMA Engenharia e Consultoria. "
     },
@@ -102,15 +151,31 @@ var lista = [
 
 
 $(document).delegate("#index", "pageinit", function () {
-    $('#tab1').addClass("ui-btn-active");
     refresh_list();
+    $('#tab1').addClass("ui-btn-active");
+    $('#tab1').trigger('click');
+    selected = {};
+    selected_curse = {};
+});
+
+$(document).delegate("#view_curse", "pageinit", function(){
+    $("#titulo").text(selected_curse.titulo);
+    $("#descricao").text(selected_curse.descricao);
+
 });
 
 $(document).delegate("#view_item", "pageinit", function () {
     $('#nome_prof').text(selected.nome);
     $('#bio_prof').text(selected.bio);
     $('#image_prof').attr('src', selected.image);
-    selected = {};
+    if(selected_curse == undefined){
+        $('#view_curse_btn').hide();
+    }
+    $('#view_curse_btn').on('click', function(){
+        if(selected_curse != null && selected_curse != {} && selected_curse.titulo){
+            $.mobile.changePage("view_curse.html", {role: "dialog"});
+        }
+    });
 });
 
 // esta funcao refresh lista e delega metodo de click para cada item.
@@ -128,6 +193,8 @@ function refresh_list() {
                 if(temp.ind>=0){
                     selected = lista[parseInt(temp.ind)];
                     console.log(selected);
+                    selected_curse = curses[selected.curso];
+                    console.log(selected_curse);
                     $.mobile.navigate('view_item.html');
                 }else{
 
