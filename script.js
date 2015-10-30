@@ -39,6 +39,22 @@ var curses = [
     {
         titulo:"Segurança no trabalho",
         descricao: "O minicurso tratará sobre a importância da aplicação das normas regulamentadoras do ministério do trabalho e emprego no ambiente de trabalho, afim de evitar possíveis acidentes de trabalho, danos materiais e multas."
+    },
+    {
+        titulo: "Dimensionamento de pavimento rígido",
+        descricao: "Apresentação sobre pavimento rígido, histórico, características e vantagens. Passaremos para o dimensionamento pelo Método - PCA/84, e metodologia de calculo e por fim, será apresentado um software livre desenvolvido no IME para facilitar a definição das espessuras pelo método PCA/84. "
+    },
+    {
+        titulo: "O que fazer para licenciar uma obra ou empreendimento?",
+        descricao: "O mini-curso terá como objetivo expor os fundamentos da avaliação de impactos ambientais e apresentar seus objetivos e métodos; introduzir o conceito de processo de avaliação de impactos ambientais e a terminologia correlata; discutir a origem, a difusão e a evolução de impacto ambiental; apresentar o quadro legal e institucional brasileiro para avaliação de impactos e licenciamento ambiental; possibilitar uma compreensão das etapas de planejamento e execução de um estudo ambiental e aplicar conceitos teóricos, os quais servirão como base para as mais variadas aplicações no ramo da engenharia ambiental."
+    },
+    {
+        titulo: "Robótica de baixo custo utilizando material reciclado",
+        descricao: " Este minicurso trará um breve histórico sobre a robótica, apresentando os principais conceitos relacionados a essa tecnologia. Algumas das inovações nas áreas médica, militar, científica e educacional serão demonstradas de forma que os participantes tenham uma noção da evolução e aplicabilidade da robótica. Em um segundo momento, um protótipo de robô construído utilizando lixo tecnológico será montado pelos participantes com peças como tampas de garrafa PET, CDs e arame."
+    },
+    {
+        titulo: "Modelagem de projetos em 3D",
+        descricao: "Os desenhos em 3D possibilitam uma interpretação e visualização dos sólidos a partir de três dimensões e podem ser executados a partir da evolução dos desenhos em 2D. Com a utilização do AutoCAD - software do tipo CAD — computer aided design ou desenho auxiliado por computador, o desenvolvimento e a elaboração de desenho técnico e de projetos na área da arquitetura e das engenharias faz uso de uma importante ferramenta de visualização do produto final, auxiliando em importantes tomadas de decisão quanto à forma, materiais utilizados e estética do mesmo. O objetivo do minicurso é apresentar os principais comandos para modelagem de um projeto em 3D, de modo que a partir destes seja possível a criação de produtos diversos."
     }
 
 ];
@@ -90,6 +106,7 @@ var lista = [
     },
     {
         nome: "Msc. Viviane Regina Costa",
+        curso: 12,
         image: "images/Viviane_Costa.jpg",
         bio: "Graduada em Arquitetura e Urbanismo pela Universidade Federal de Alagoas (2006). Mestra em Arquitetura e Urbanismo pelo programa de Pos-Graduacao em Dinamicas do Espaco Habitado da Faculdade de Arquitetura e Urbanismo da Universidade Federal de Alagoas (2008). Doutoranda em Arquitetura e Urbanismo no Programa Dinamicas do Espaco Habitado da Faculdade de Arquitetura e Urbanismo da Universidade Federal de Alagoas.Professora do Eixo de Tecnologia da Universidade Federal de Alagoas do Campus do Sertao. Pesquisadora do Grupo de Pesquisa Morfologia dos Espacos de Uso Publico. Tem experiencia na area de Arquitetura e Urbanismo, atuando principalmente nos seguintes temas: sistemas de espacos livres; espacos urbanos de uso publico; apropriacao dos espacos, intervencao urbana, centralidades urbanas e areas de atividades mutliplas."
     },
@@ -124,16 +141,19 @@ var lista = [
     },
     {
         nome: "Aline Espindola",
+        curso: 9,
         image: "images/Aline_Espindola_YcYi5eR.jpg",
         bio: "Possui graduacao em Engenharia Civil pela Universidade Federal de Alagoas (2012) e mestrado em Engenharia de Transportes pelo Instituto Militar de Engenharia (2014). Atualmente e professor assistente i da Universidade Federal de Alagoas."
     },
     {
         nome: " Msc. Emerson Lima ",
+        curso: 11,
         image: "images/emerson_cortada_YQeNmJc.jpg",
         bio: "Possui graduacao em Ciencia da Computacao pela Universidade Federal de Alagoas (2002), especializacao em Automacao Industrial (2011) e mestrado em Informatica pela Universidade Federal de Campina Grande (2004), concluido com distincao. Atualmente e professor do Instituto Federal de Educacao, Ciencia e Tecnologia de Alagoas, atuando tambem como Chefe do Departamento de Apoio Academico. Tambem e coordenador do Grupo de Robotica do IFAL, tendo recebido a Comenda Cientifica Dr. Samuel Cunha pelos trabalhos desenvolvidos com o grupo (2011). Tem experiencia na area de Ciencia da Computacao, com enfase em Engenharia de Software e Robotica, atuando principalmente nos seguintes temas: agentes moveis, padroes de projeto, metodos formais, informatica na educacao, prototipagem e reciclagem de lixo tecnologico. "
     },
     {
         nome: "Dr. Eduardo Lucena",
+        curso: 10,
         image: "images/Eduardo_Amorim_hIcegVF.png",
         bio: "Possui graduacao em Engenharia Civil pela Universidade Federal de Alagoas-UFAL (2005), mestrado em Engenharia Hidraulica e Saneamento pela Escola de Engenharia de Sao Carlos (EESC) da Universidade de Sao Paulo-USP (2007) e doutorado em Engenharia Hidraulica e Saneamento pela Universidade de Sao Paulo (2009). Atualmente e professor adjunto e coordenador do curso de Engenharia Ambiental e Sanitaria e pesquisador do Centro de Tecnologia da Universidade Federal de Alagoas(UFAL). Responsavel pelas disciplinas de Avaliacao de Impacto Ambiental, Analise de Risco e Tratamento de Efluentes. e professor do programas de pos-graduacao em Recursos Hidricos e Saneamento do Centro de Tecnologia e Energia da Biomassa do Centro de Ciencias Agrarias da UFAL. Revisor de periodico da International Journal of Hydrogen Energy, Journal of Chemical Technology and Biotechnology e REGA Revista de Gestao de aguas da America Latina. Tem experiencia na area de Engenharia Hidraulica e Saneamento, com enfase em Tratamento de aguas Residuarias, atuando principalmente nos seguintes temas: tratamento anaerobio de aguas residuarias contendo compostos toxicos (fenol), reator de anaerobio de leito fluidificado, producao biologica de hidrogenio a partir de aguas residuarias e producao de bionergia. "
     },
