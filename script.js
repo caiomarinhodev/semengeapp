@@ -59,6 +59,10 @@ var curses = [
     {
         titulo:"Projeto & Desenvolvimento – Produtos Sustentáveis",
         descricao: ""
+    },
+    {
+        titulo: "Modelagem Matemática",
+        descricao: " O minicurso Modelagem Matemática tem o objetivo de proporcionar ao aluno o entedimento do processo de criação de modelos matemáticos para a engenharia. Serão estudadas as etapas de estruturação de um modelo e suas implicações técnicas e políticas. Análises de casos com o uso de Excel complementam os estudos."
     }
 
 ];
@@ -164,6 +168,7 @@ var lista = [
     },
     {
         nome: "Msc. Felipe Souza",
+        curso: 14,
         image: "images/Felipe_Souza.jpg",
         bio: "Possui graduacao (2007) e mestrado (2010) em Engenharia de Producao pela Universidade Federal de Pernambuco. Atualmente e Professor Assistente de Metodos Quantitativos e Gestao de Operacoes na Faculdade de Economia, Administracao e Contabilidade da Universidade Federal de Alagoas."
     },
@@ -188,9 +193,10 @@ var lista = [
 
 
 $(document).delegate("#index", "pageinit", function () {
-    refresh_list();
     $('#tab1').addClass("ui-btn-active");
     $('#tab1').trigger('click');
+    refresh_list();
+
     selected = {};
     selected_curse = {};
 });
