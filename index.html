@@ -4,29 +4,32 @@
     <title>SEMENGE 2015</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="themes/semenge.min.css" />
-    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <link rel="stylesheet" href="themes/semenge.min.css"/>
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css"/>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <style>
         .my_icon_wrapper {
             float: left;
-            width: 80px; height: 80px;
+            width: 80px;
+            height: 80px;
             text-align: center;
             vertical-align: middle;
             padding-right: 8px;
         }
+
         .custom-border-radius .ui-btn-icon-notext.ui-corner-all {
             -webkit-border-radius: .3125em;
             border-radius: .3125em;
             margin-top: 4px;
         }
-        .content_list{
+
+        .content_list {
             padding: 15px;
         }
 
-        .plinha{
+        .plinha {
             font-size: 14px;
         }
     </style>
@@ -44,7 +47,7 @@
 
     <div data-role="header">
         <div class="custom-border-radius">
-            <a href="#menu_contato" data-role="button" data-iconpos="notext" data-icon="bars"
+            <a href="#nav" data-role="button" data-iconpos="notext" data-icon="bars"
                data-shadow="false"
                data-iconshadow="false" class="ui-btn-left"
                class="ui-icon-nodisc">Menu</a>
@@ -59,21 +62,37 @@
     </div>
     <!-- /header -->
     <!------------------------------------------------------------------------------------------------MENU Contato-->
-    <div data-role="panel" data-display="reveal" id="menu_contato">
-        <!-- panel content goes here -->
-        <form>
-            <ul data-role="listview" data-inset="false">
-                <center><li data-role="list-divider" data-theme="b"><h2>Contato</h2></li></center>
-                <i class="list-divider"></i>
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" value="">
-                <label for="comentario">Comentário:</label>
-                <textarea cols="40" rows="8" name="comentario" id="comentario"></textarea>
-            </ul>
-            <hr/>
-            <input data-theme="b" type="submit" onclick="postFormToGoogle()" data-role="button" value="ENVIAR"></input>
-        </form>
-    </div><!-- /panel -->
+    <div data-role="panel" data-display="push" id="nav">
+        <ul data-role="listview" data-theme="c" >
+            <li data-icon="delete"><a href="#" data-rel="close"><center>Menu</center></a></li>
+            <li><a href="index.html">Programacao</a></li>
+            <li><a href="evento.html">O Evento</a></li>
+            <li><a href="#">Mapa</a></li>
+            <li><a href="tematica.html">Temática</a></li>
+            <li><a href="#">Patrocinadores</a></li>
+            <li>
+                <div data-role="collapsible">
+                    <h3>Contato</h3>
+                    <form>
+                    <ul data-role="listview">
+                        <i class="list-divider"></i>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" value="">
+                        <label for="comentario">Comentário:</label>
+                        <textarea cols="40" rows="8" name="comentario" id="comentario"></textarea>
+                    </ul>
+                    <hr/>
+                    <input data-theme="b" type="submit" onclick="postFormToGoogle()" data-role="button" value="ENVIAR"></input>
+                </form>
+                </div><!-- /collapsible -->
+            </li>
+        </ul>
+    </div>
+    <!-- /panel -->
+    <!--<div data-role="panel" data-display="reveal" id="menu_contato">-->
+    <!--&lt;!&ndash; panel content goes here &ndash;&gt;-->
+    <!-- -->
+    <!--</div>&lt;!&ndash; /panel &ndash;&gt;-->
 
     <div role="main" class="ui-content">
         <!----------------------------------------------------------------------------- TABS -->
@@ -87,6 +106,7 @@
                 </ul>
             </div>
             <br/><br/>
+
             <div id="one">
                 <ul data-role="listview" data-inset="false" id="lista-1" class="lista" data-theme="c">
                     <li data-role="list-divider">
@@ -97,11 +117,14 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/semenge.png" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h2>Visita Técnica</h2>
+
                                 <p><strong>Companhia Hidroelétrica do São Francisco (Chesf) - Usina Xingó</strong></p>
                             </div>
-                            <p class="ui-li-aside"><strong class="plinha">07:00</strong> - <strong class="plinha">17:00</strong></p>
+                            <p class="ui-li-aside"><strong class="plinha">07:00</strong> - <strong
+                                    class="plinha">17:00</strong></p>
                         </a>
                     </li>
                     <li>
@@ -109,11 +132,14 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/semenge.png" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h2>CREDENCIAMENTO</h2>
+
                                 <p><strong>Local: Hall de Entrada</strong></p>
                             </div>
-                            <p class="ui-li-aside"><strong class="plinha">08:00</strong> - <strong class="plinha">18:00</strong></p>
+                            <p class="ui-li-aside"><strong class="plinha">08:00</strong> - <strong
+                                    class="plinha">18:00</strong></p>
                         </a>
                     </li>
                     <li data-role="list-divider">
@@ -124,8 +150,10 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/semenge.png" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h2>Evento Startup ENG</h2>
+
                                 <p><strong>Local: Auditório Graciliano Ramos</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">15:00</strong></p>
@@ -139,6 +167,7 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/semenge.png" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h2>Solenidade de Abertura</h2>
                             </div>
@@ -150,9 +179,12 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/gustavo-lopes.jpg" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Gustavo Lopes - (IMA)</h4>
+
                                 <p><strong>Palestra de Abertura</strong></p>
+
                                 <p><strong>Local: Auditório Graciliano Ramos</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">20:00</strong></p>
@@ -163,9 +195,12 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/user.png" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Ramon Santos de Carvalho - SEBRAE</h4>
+
                                 <p><strong>Palestra de Empreendedorismo</strong></p>
+
                                 <p><strong>Local: Auditório Graciliano Ramos</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">21:00</strong></p>
@@ -176,8 +211,10 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/cocktail.png" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Coquetel de Abertura</h4>
+
                                 <p><strong>Local: Hall de Entrada</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">22:00</strong></p>
@@ -195,11 +232,14 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/semenge.png" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h2>CREDENCIAMENTO</h2>
+
                                 <p><strong>Local: Hall de Entrada</strong></p>
                             </div>
-                            <p class="ui-li-aside"><strong class="plinha">08:00</strong> - <strong class="plinha">12:00</strong></p>
+                            <p class="ui-li-aside"><strong class="plinha">08:00</strong> - <strong
+                                    class="plinha">12:00</strong></p>
                         </a>
                     </li>
                     <li data-ind="5">
@@ -207,9 +247,12 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/rafaelafaciola.png" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Profa. Dra. Rafaela Faciola</h4>
+
                                 <p><strong>Minicurso 1: Risco em Obras </strong></p>
+
                                 <p><strong>Local: Sala 06</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
@@ -220,9 +263,12 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/karlisonandre.png" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Prof. Karlisson André</h4>
+
                                 <p><strong>Minicurso 2: Dimensionamento de elementos especiais: Piscinas</strong></p>
+
                                 <p><strong>Local: Sala 07</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
@@ -233,9 +279,12 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/Felipe_Souza.jpg" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Prof. Felipe Souza</h4>
+
                                 <p><strong>Minicurso 3: Modelagem Matemática</strong></p>
+
                                 <p><strong>Local: Sala 10</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
@@ -246,10 +295,14 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/alancunha.jpg" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Dr. Allan Cunha Barros</h4>
+
                                 <p><strong>Minicurso 4: Irrigação Paisagística</strong></p>
+
                                 <p><strong>Local: Sala de Pranchetas</strong></p>
+
                                 <p>Requisito: Computador com software CAD</p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
@@ -260,9 +313,12 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/Aline_Espindola_YcYi5eR.jpg" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Profa. Aline Espíndola</h4>
+
                                 <p><strong>Minicurso 5: Dimensionamento de pavimento rígido</strong></p>
+
                                 <p><strong>Local: Sala 09</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
@@ -273,9 +329,13 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/Antonio_Netto_mNyh1HC.jpg" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Prof. Dr. Antonio Oliveira Netto</h4>
-                                <p><strong>Minicurso 6: EPANET como ferramenta para simulação de redes de distribuição de água</strong></p>
+
+                                <p><strong>Minicurso 6: EPANET como ferramenta para simulação de redes de distribuição
+                                    de água</strong></p>
+
                                 <p><strong>Local: Laboratório 02</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
@@ -286,8 +346,10 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/coffee.png" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h2>Coffee Break</h2>
+
                                 <p><strong>Local: Hall de Entrada</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">10:00</strong></p>
@@ -301,8 +363,10 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/semenge.png" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h2>Apresentação de Trabalhos</h2>
+
                                 <p><strong>Local: Salas 04, 07 e 08</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">14:00</strong></p>
@@ -313,9 +377,12 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/user.png" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Bruno Pimentel - (SEPLAG)</h4>
+
                                 <p><strong>Planejamento Governamental</strong></p>
+
                                 <p><strong>Local: Auditório Graciliano Ramos</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">16:20</strong></p>
@@ -326,9 +393,12 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/user.png" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4> Ramon Santos de Carvalho - SEBRAE</h4>
+
                                 <p><strong>Sustentabilidade</strong></p>
+
                                 <p><strong>Local: Auditório Graciliano Ramos</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">16:20</strong></p>
@@ -346,10 +416,15 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/Juliane_Marques_QEXTC1O.jpg" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Profª. Dra. Juliane Marques (UFAL/AGM)</h4>
-                                <p><strong>Minicurso 7: Dimensionamento geotécnico e estrutural de fundações diretas </strong></p>
+
+                                <p><strong>Minicurso 7: Dimensionamento geotécnico e estrutural de fundações
+                                    diretas </strong></p>
+
                                 <p><strong>Local: Sala 05</strong></p>
+
                                 <p>Requisito: Mecânica dos Solos</p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
@@ -360,9 +435,12 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/Perfil_Cristiano_Varady.jpg" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Christiano Várady</h4>
+
                                 <p><strong>Minicurso 8: Viabilidade de projetos</strong></p>
+
                                 <p><strong>Local: Laboratório 02</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
@@ -373,9 +451,12 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/Perfil_Tania_Voronkoff.jpg" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Profa. Msc. Tânia Voronkoff (UFAL)</h4>
+
                                 <p><strong>Minicurso 9: Projeto & Desenvolvimento – Produtos Sustentáveis</strong></p>
+
                                 <p><strong>Local: Sala 06</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
@@ -386,9 +467,13 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/Eduardo_Amorim_hIcegVF.png" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Prof. Eduardo Amorim (UFAL)</h4>
-                                <p><strong>Minicurso 10: O que fazer para licenciar uma obra ou empreendimento?</strong></p>
+
+                                <p><strong>Minicurso 10: O que fazer para licenciar uma obra ou empreendimento?</strong>
+                                </p>
+
                                 <p><strong>Local: Sala 08</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
@@ -399,9 +484,13 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/emerson_cortada_YQeNmJc.jpg" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Msc. Emerson Lima</h4>
-                                <p><strong>Minicurso 11: Robótica de baixo custo utilizando material reciclado</strong></p>
+
+                                <p><strong>Minicurso 11: Robótica de baixo custo utilizando material reciclado</strong>
+                                </p>
+
                                 <p><strong>Local: Sala de Pranchetas</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
@@ -412,9 +501,12 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/Aline_Ramos_nM5yXAJ.jpg" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Dra. Aline Ramos</h4>
-                                <p><strong>Minicurso 12:  Introdução ao estudo de Pontes</strong></p>
+
+                                <p><strong>Minicurso 12: Introdução ao estudo de Pontes</strong></p>
+
                                 <p><strong>Local: Sala 09</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
@@ -425,8 +517,10 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/coffee.png" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h2>Coffee Break</h2>
+
                                 <p><strong>Local: Hall de Entrada</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">10:00</strong></p>
@@ -440,8 +534,10 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/semenge.png" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h2>Apresentação de Trabalhos</h2>
+
                                 <p><strong>Local: Salas 04, 07 e 08</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">14:00</strong></p>
@@ -452,8 +548,10 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/user.png" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h2>Eng. Reinaldo Falcão (CREA/AL)</h2>
+
                                 <p><strong>Sistema CONFEA/CREA</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">16:20</strong></p>
@@ -464,8 +562,10 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/elvys_cortada_GXwj38E.jpg" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h2>Prof. Elvys Soares</h2>
+
                                 <p><strong>Computação e Engenharia: Isso é tecnologia</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">16:20</strong></p>
@@ -483,9 +583,12 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/Viviane_Costa.jpg" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Profa. Viviane Regina Costa (UFAL)</h4>
+
                                 <p><strong>Minicurso 13: Modelagem de projetos em 3D </strong></p>
+
                                 <p><strong>Local: Laboratório 02</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
@@ -496,9 +599,13 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/Perfil_Fernando_Cavalcanti.jpg" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Prof. Dr. Fernando Sá Cavalcanti (UFAL)</h4>
-                                <p><strong>Minicurso 14: Certificações Ambientais e Sustentabilidade na Construção Civil</strong></p>
+
+                                <p><strong>Minicurso 14: Certificações Ambientais e Sustentabilidade na Construção
+                                    Civil</strong></p>
+
                                 <p><strong>Local: Sala 01</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
@@ -509,9 +616,13 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/Alexandre_Lima_3muXQPc_OkXylbk.jpg" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Prof. Msc. Alexandre Lima (UFAL)</h4>
-                                <p><strong>Minicurso 15: Ferramentas estatísticas com o uso de planilhas eletrônicas</strong></p>
+
+                                <p><strong>Minicurso 15: Ferramentas estatísticas com o uso de planilhas
+                                    eletrônicas</strong></p>
+
                                 <p><strong>Local: Sala 02</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
@@ -522,9 +633,12 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/Dalgoberto_Miquilino_ihOU1MW.jpg" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Prof. Msc. Dalgoberto Miquilino (UFAL)</h4>
+
                                 <p><strong>Minicurso 16: Análise de valor agregado em projetos</strong></p>
+
                                 <p><strong>Local: Sala 05</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
@@ -535,9 +649,13 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/Wanessa_Soares.jpg" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Profa. Dra. Wanessa Cartaxo Soares (Copesolo/Concreto - PB)</h4>
-                                <p><strong>Minicurso 17: Mapeamento geotécnico com sondagens e suas aplicações em obras de fundações</strong></p>
+
+                                <p><strong>Minicurso 17: Mapeamento geotécnico com sondagens e suas aplicações em obras
+                                    de fundações</strong></p>
+
                                 <p><strong>Local: Sala 06</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
@@ -548,9 +666,12 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/user.png" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Eng. João Guilherme Lessa Rocha</h4>
+
                                 <p><strong>Minicurso 18: Introdução a Normas Regulamentadoras do MTE</strong></p>
+
                                 <p><strong>Local: Sala 10</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
@@ -564,8 +685,10 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/semenge.png" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Fórum de Mercado das Engenharias</h4>
+
                                 <p><strong>Local: Audiotório Graciliano Ramos</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">14:00</strong></p>
@@ -576,9 +699,12 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/user.png" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Roberta Bottoni (CRESCE)</h4>
+
                                 <p><strong>Gestão Empresarial envolvendo casos de sucesso</strong></p>
+
                                 <p><strong>Local: Audiotório Graciliano Ramos</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">17:00</strong></p>
@@ -592,8 +718,10 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/semenge.png" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Premiações de Trabalhos</h4>
+
                                 <p><strong>Local: Auditório Graciliano Ramos</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">18:00</strong></p>
@@ -604,8 +732,10 @@
                             <p class="my_icon_wrapper">
                                 <img src="images/cocktail.png" width="80" height="80">
                             </p>
+
                             <div class="content_list">
                                 <h4>Coquetel de Encerramento</h4>
+
                                 <p><strong>Local: Hall de Entrada</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">19:00</strong></p>
@@ -626,7 +756,6 @@
 <!----------------------------------------------------------------------------------------------- View Item --->
 
 
-
 <!-------------------------------------------------------------------------------------------------------- DIALOG -->
 
 <div data-role="page" id="info">
@@ -637,7 +766,8 @@
         <center>
             <img src="images/TESTE_CINZA.png" height="50">
         </center>
-        <br/><hr/>
+        <br/>
+        <hr/>
         <p><strong>
             3ª Semana de Engenharia do Campus do Sertão é um evento que está sendo organizado por uma comissão
             formada por alunos e professores do eixo da tecnologia da Universidade Federal de Alagoas do Campus do
@@ -646,7 +776,8 @@
             trabalhos científicos, estes abrangendo diversas áreas do conhecimento.
         </strong></p>
         <br/>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6620.904922164352!2d-37.98868001349609!3d-9.349755083522577!2m3!1f0!2f0!3f0!3m2!1i24!2i768!4f13.1!3m3!1m2!1s0x7092752f4bf42e1%3A0x829e278d9a333861!2sUFAL+-+Campus+do+Sert%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1445693446090" width="480" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6620.904922164352!2d-37.98868001349609!3d-9.349755083522577!2m3!1f0!2f0!3f0!3m2!1i24!2i768!4f13.1!3m3!1m2!1s0x7092752f4bf42e1%3A0x829e278d9a333861!2sUFAL+-+Campus+do+Sert%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1445693446090"
+                width="480" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
         <br/>
         <hr/>
         <div class="ui-grid-b">
@@ -670,7 +801,8 @@
                     <img src="images/1441339313_Instagram.png" alt="instagram" width="40" height="40">
                 </center>
             </div>
-        </div><!-- /grid-c -->
+        </div>
+        <!-- /grid-c -->
     </div>
 </div>
 
