@@ -37,7 +37,7 @@ var curses = [
         descricao: "A Gestão de Valor Agregado (GVA) é considerada como um dos melhores métodos para analisar a evolução dos custos e prazos de um projeto devido à sua eficiência. Ela integra o escopo, o cronograma e os recursos para então medir o desempenho e o progresso do que foi planejado."
     },
     {
-        titulo:"Segurança no trabalho",
+        titulo:"Introdução a Normas Regulamentadoras do MTE",
         descricao: "O minicurso tratará sobre a importância da aplicação das normas regulamentadoras do ministério do trabalho e emprego no ambiente de trabalho, afim de evitar possíveis acidentes de trabalho, danos materiais e multas."
     },
     {
@@ -55,6 +55,10 @@ var curses = [
     {
         titulo: "Modelagem de projetos em 3D",
         descricao: "Os desenhos em 3D possibilitam uma interpretação e visualização dos sólidos a partir de três dimensões e podem ser executados a partir da evolução dos desenhos em 2D. Com a utilização do AutoCAD - software do tipo CAD — computer aided design ou desenho auxiliado por computador, o desenvolvimento e a elaboração de desenho técnico e de projetos na área da arquitetura e das engenharias faz uso de uma importante ferramenta de visualização do produto final, auxiliando em importantes tomadas de decisão quanto à forma, materiais utilizados e estética do mesmo. O objetivo do minicurso é apresentar os principais comandos para modelagem de um projeto em 3D, de modo que a partir destes seja possível a criação de produtos diversos."
+    },
+    {
+        titulo:"Projeto & Desenvolvimento – Produtos Sustentáveis",
+        descricao: ""
     }
 
 ];
@@ -74,6 +78,7 @@ var lista = [
     {
         nome: "Msc. Tania Voronkoff",
         image: "images/Perfil_Tania_Voronkoff.jpg",
+        curso: 13,
         bio: "Possui graduacao em Engenharia Civil pela Universidade Federal de Alagoas - UFAL (1984), pos - graduacao Latu Sensu em Formacao para Docencia do Ensino Superior pela Fundacao Educacional Jayme de Altavila - FEJAL (2001) e mestrado em Engenharia de Producao, na area de Gestao da Producao do NEP - Nucleo de Engenharia de Producao, da Universidade Federal da Paraiba - UFPB (2009). Lecionou nos Cursos de Engenharia Civil e Engenharia de Producao da Universidade Federal de Alagoas - Campus Sertao, as disciplinas:Engenharia de Produto I, Engenharia de Produto II,Engenharia de Metodos,Gestao de Residuos Solidos e Processos Produtivos . Atualmente e professora do Curso de Engenharia de Pesca da Unidade Penedo - Campus Arapiraca da Universidade Federal de Alagoas onde coordena o Curso de Engenharia de Producao."
     },
     {
@@ -167,7 +172,19 @@ var lista = [
         nome: "Msc. Elvys Soares",
         image: "images/elvys_cortada_GXwj38E.jpg",
         bio: "Possui graduacao em Bacharelado em Ciencia da Computacao pela Universidade Federal de Alagoas (2004), formacao complementar em Analise de Testes, promovida pela Universidade Federal de Pernambuco em parceria com a Motorola (2005) e mestrado em Modelagem Computacional de Conhecimento pela Universidade Federal de Alagoas (2009). Atualmente e professor do Instituto Federal de Educacao, Ciencia e Tecnologia de Alagoas. Tem experiencia na area de Ciencia da Computacao, com enfase em Engenharia de Software e Inteligencia Artificial."
-    }];
+    },
+    {
+        nome: "João Constantino",
+        image: "",
+        bio: "Técnico em informática pelo Instituto Federal de Educação, Ciência e Tecnologia de Alagoas, Graduando do curso de Ciência da Computação pela Universidade Federal de Alagoas. Pesquisador bolsista do Grupo Robótica IFAL, atuando nas áreas de robótica, automação, prototipagem e desenvolvimento tecnológico. Atua como programador das linguagens Java , Python e C, e tem conhecimentos em programação WEB (HTML, CSS, Javascript, Servlets, JSP, Django...). Teve projetos premiados nacional e internacionalmente por diversas instituições e feiras de ciência. Atualmente desenvolvendo projetos para à tecnologia assistiva de baixo custo, sistemas web e indústria do esporte. "
+    },
+    {
+        nome: "STARTUP ENG",
+        image: "images/logo_startup_eng.png",
+        bio: "O Evento STARTUP ENG 2015 não é um concurso, mas sim um desafio de projetos de startups para empreendedores que desejam desenvolver suas ideias e lançar produtos comercialmente viáveis no ramo da Engenharia. O Evento tem como objetivo diagnosticar problemas reais que afetam as diversas áreas das Engenharias e propor ideias e soluções tecnológicas e o empreendedorismo digital. Para tal, pesquisadores, professores, representantes governamentais, empreendedores e instituições não governamentais atuarão num ecossistema de integração que alie a ciência, inovação e empreendedorismo em prol de soluções de qualidade. \n A participação e o envio de projetos são livres a todos os interessados e inscritos na SEMENGE 2015 e deverá ocorrer no período das 00:00h do dia 30/10/15 às 23:59h do dia 20/11/15. Os aprovados serão divulgados no site oficial do evento e demais recursos de mídia escolhidos pela comissão organizadora e fará uma apresentação para uma banca de jurados renomada no contexto das engenharias e Startups. Haverá premiação para os primeiros colocados."
+    }
+
+];
 
 
 $(document).delegate("#index", "pageinit", function () {

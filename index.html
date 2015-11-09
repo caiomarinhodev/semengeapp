@@ -4,8 +4,10 @@
     <title>SEMENGE 2015</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="themes/semenge.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <style>
         .my_icon_wrapper {
@@ -38,7 +40,7 @@
 <body>
 
 <!-------------------------------------------------------------------------------------------------------- Index-->
-<div data-role="page" id="index">
+<div data-role="page" id="index" data-theme="a">
 
     <div data-role="header">
         <div class="custom-border-radius">
@@ -69,7 +71,7 @@
                 <textarea cols="40" rows="8" name="comentario" id="comentario"></textarea>
             </ul>
             <hr/>
-            <input type="submit" onclick="postFormToGoogle()" data-role="button" value="ENVIAR"></input>
+            <input data-theme="b" type="submit" onclick="postFormToGoogle()" data-role="button" value="ENVIAR"></input>
         </form>
     </div><!-- /panel -->
 
@@ -86,7 +88,7 @@
             </div>
             <br/><br/>
             <div id="one">
-                <ul data-role="listview" data-inset="false" id="lista-1" class="lista">
+                <ul data-role="listview" data-inset="false" id="lista-1" class="lista" data-theme="c">
                     <li data-role="list-divider">
                         Terça, 8 de Dezembro de 2015
                     </li>
@@ -115,6 +117,21 @@
                         </a>
                     </li>
                     <li data-role="list-divider">
+                        <center>Tarde</center>
+                    </li>
+                    <li data-ind="20">
+                        <a href="#">
+                            <p class="my_icon_wrapper">
+                                <img src="images/semenge.png" width="80" height="80">
+                            </p>
+                            <div class="content_list">
+                                <h2>Evento Startup ENG</h2>
+                                <p><strong>Local: Auditório Graciliano Ramos</strong></p>
+                            </div>
+                            <p class="ui-li-aside"><strong class="plinha">15:00</strong></p>
+                        </a>
+                    </li>
+                    <li data-role="list-divider">
                         <center>Noite</center>
                     </li>
                     <li>
@@ -136,7 +153,7 @@
                             <div class="content_list">
                                 <h4>Gustavo Lopes - (IMA)</h4>
                                 <p><strong>Palestra de Abertura</strong></p>
-                                <p><strong>Auditório Graciliano Ramos</strong></p>
+                                <p><strong>Local: Auditório Graciliano Ramos</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">20:00</strong></p>
                         </a>
@@ -149,7 +166,7 @@
                             <div class="content_list">
                                 <h4>Ramon Santos de Carvalho - SEBRAE</h4>
                                 <p><strong>Palestra de Empreendedorismo</strong></p>
-                                <p><strong>Auditório Graciliano Ramos</strong></p>
+                                <p><strong>Local: Auditório Graciliano Ramos</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">21:00</strong></p>
                         </a>
@@ -169,7 +186,7 @@
                 </ul>
             </div>
             <div id="two">
-                <ul data-role="listview" data-inset="false" id="lista-2" class="lista">
+                <ul data-role="listview" data-inset="false" id="lista-2" class="lista" data-theme="c">
                     <li data-role="list-divider">
                         Quarta, 9 de Dezembro de 2015
                     </li>
@@ -320,7 +337,7 @@
                 </ul>
             </div>
             <div id="three">
-                <ul data-role="listview" data-inset="false" id="lista-3" class="lista">
+                <ul data-role="listview" data-inset="false" id="lista-3" class="lista" data-theme="c">
                     <li data-role="list-divider">
                         Quinta, 10 de Dezembro de 2015
                     </li>
@@ -358,7 +375,7 @@
                             </p>
                             <div class="content_list">
                                 <h4>Profa. Msc. Tânia Voronkoff (UFAL)</h4>
-                                <p><strong>Minicurso 9: Projeto e desenvolvimento de um produto</strong></p>
+                                <p><strong>Minicurso 9: Projeto & Desenvolvimento – Produtos Sustentáveis</strong></p>
                                 <p><strong>Local: Sala 06</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
@@ -457,7 +474,7 @@
                 </ul>
             </div>
             <div id="four">
-                <ul data-role="listview" data-inset="false" id="lista-4" class="lista">
+                <ul data-role="listview" data-inset="false" id="lista-4" class="lista" data-theme="c">
                     <li data-role="list-divider">
                         Sexta, 11 de Dezembro de 2015
                     </li>
@@ -533,7 +550,7 @@
                             </p>
                             <div class="content_list">
                                 <h4>Eng. João Guilherme Lessa Rocha</h4>
-                                <p><strong>Minicurso 18: Segurança no Trabalho</strong></p>
+                                <p><strong>Minicurso 18: Introdução a Normas Regulamentadoras do MTE</strong></p>
                                 <p><strong>Local: Sala 10</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
