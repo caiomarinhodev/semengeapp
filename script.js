@@ -63,6 +63,10 @@ var curses = [
     {
         titulo: "Modelagem Matemática",
         descricao: " O minicurso Modelagem Matemática tem o objetivo de proporcionar ao aluno o entedimento do processo de criação de modelos matemáticos para a engenharia. Serão estudadas as etapas de estruturação de um modelo e suas implicações técnicas e políticas. Análises de casos com o uso de Excel complementam os estudos."
+    },
+    {
+        titulo: "Dimensionamento de elementos especiais: Piscinas",
+        descricao: "Resumo: Um reservatório é um recipiente capaz de armazenar grãos e líquidos. Entre os líquidos, o mais comum é a água, sendo potável ou servida, além de  bebidas e hidrocarbonetos, entre outros. Por outro lado, do ponto de vista da hidráulica este elemento estrutural pode ser usado para garantir a adução com vazão constante. Ademais, sua classificação é dada de acordo com a localização do terreno, podendo ser: enterrado, semi-enterrado, apoiado e stand pipe. Neste contexto, o mini curso abordará os reservatórios enterrados."
     }
 
 ];
@@ -92,6 +96,7 @@ var lista = [
     },
     {
         nome: "Msc. Karlisson Andre",
+        curso: 15,
         image: "images/karlisonandre.png",
         bio: "Possui graduacao em Eng. Civil pela Universidade Federal de Alagoas (2007) e mestrado em Engenharia Civil pela Universidade Federal de Alagoas (2011). Tem experiencia na area de Engenharia Civil, com enfase em Engenharia Civil, atuando principalmente nos seguintes temas: residuo de construcao e demolicao, agregado, argamassa, reciclagem e concreto."
     },
@@ -145,7 +150,7 @@ var lista = [
     {
         nome: "Eng. Joao Guilherme Lessa Rocha",
         curso: 8,
-        image: "images/user.png",
+        image: "images/joaozito.jpg",
         bio: "Possui graduacao em Engenharia Civil pelo Centro Universitario CESMAC (2014). Pos graduado em Engenharia de Seguranca do Trabalho pela Faculdade Figueiredo Costa. Coordenador Tecnico da empresa SOMA Engenharia e Consultoria. "
     },
     {
@@ -199,6 +204,44 @@ $(document).delegate("#index", "pageinit", function () {
 
     selected = {};
     selected_curse = {};
+});
+
+$(document).delegate("#mapa", "pageinit", function(){
+    openPhotoSwipe = function() {
+        var pswpElement = document.querySelectorAll('.pswp')[0];
+
+        // build items array
+        var items = [
+            {
+                src: 'images/mapa1.png',
+                w: 964,
+                h: 1024
+            },
+            {
+                src: 'images/mapa2.png',
+                w: 1024,
+                h: 683
+            }
+        ];
+
+        // define options (if needed)
+        var options = {
+            // history & focus options are disabled on CodePen
+            history: false,
+            focus: false,
+
+            showAnimationDuration: 0,
+            hideAnimationDuration: 0
+
+        };
+
+        var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+        gallery.init();
+    };
+
+    //openPhotoSwipe();
+
+    document.getElementById('view_map_btn').onclick = openPhotoSwipe;
 });
 
 $(document).delegate("#view_curse", "pageinit", function(){
