@@ -128,12 +128,6 @@
 
                         <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
 
-                        <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
                         <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
                         <!-- element will get class pswp__preloader--active when preloader is running -->
                         <div class="pswp__preloader">
@@ -143,10 +137,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                        <div class="pswp__share-tooltip"></div>
                     </div>
 
                     <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
@@ -183,17 +173,15 @@
 
         // define options (if needed)
         var options = {
-            // history & focus options are disabled on CodePen
-            history: false,
-            focus: false,
-
-            showAnimationDuration: 0,
-            hideAnimationDuration: 0
-
+            // optionName: 'option value'
+            // for example:
+            index: 0 // start at first slide
         };
 
+        // Initializes and opens PhotoSwipe
         var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
         gallery.init();
+
     };
 
     openPhotoSwipe();
