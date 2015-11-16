@@ -26,7 +26,7 @@ var curses = [
     },
     {
         titulo:"Pontes",
-        descricao: "Consiste em um apanhado geral dos principais tópicos a serem tratados sobre pontes e estimular os alunos a usar o Ftool para brincar um pouco com os sistemas estruturais e as linhas de influencia. Esse software será abordado porque os softwares de dimensionamento possuem um grau de complexidade que não dá pra serem abordados em pouco tempo."
+        descricao: "Consiste em um apanhado geral dos principais tópicos a serem tratados sobre pontes e estimular os alunos a usar o Ftool para brincar um pouco com os sistemas estruturais e as linhas de influência. Esse software será abordado porque os softwares de dimensionamento possuem um grau de complexidade que não dá pra serem abordados em pouco tempo."
     },
     {
         titulo:"EPANET como ferramenta para simulação de redes de distribuição de água.",
@@ -67,121 +67,126 @@ var curses = [
     {
         titulo: "Dimensionamento de elementos especiais: Piscinas",
         descricao: "Resumo: Um reservatório é um recipiente capaz de armazenar grãos e líquidos. Entre os líquidos, o mais comum é a água, sendo potável ou servida, além de  bebidas e hidrocarbonetos, entre outros. Por outro lado, do ponto de vista da hidráulica este elemento estrutural pode ser usado para garantir a adução com vazão constante. Ademais, sua classificação é dada de acordo com a localização do terreno, podendo ser: enterrado, semi-enterrado, apoiado e stand pipe. Neste contexto, o mini curso abordará os reservatórios enterrados."
+    },
+    {
+        titulo: "Mapeamento geotécnico com sondagens e suas aplicações em obras de fundações",
+        descricao: "O Minicurso abordará a implantação de banco de dados geológico - geotécnicos a partir de sondagens à percussão e sua aplicação em atividades de planejamento, cálculo e execução de obras de fundações. Serão abordadas noções de realização e interpretação de sondagens à percussão com SPT, seu uso no Mapeamento Geotécnico e como os diferentes tipos de perfis geotécnicos direcionam a escolha do tipo de fundação. Como exemplo, serão demonstrados casos de obras envolvendo a ferramenta."
     }
 
 ];
 var lista = [
     {
-        nome: "Dr. Fernando Sa Cavalcanti",
+        nome: "Dr. Fernando Sá Cavalcanti",
         curso: 0,
         image: "images/Perfil_Fernando_Cavalcanti.jpg",
-        bio: "Possui Graduacao em Arquitetura e Urbanismo pela Universidade Federal de Alagoas (2007), Mestrado em Construcao Civil pela Universidade Federal de Sao Carlos (2010), Doutorado em Arquitetura e Urbanismo pela Universidade de Sao Paulo (2013) e Curso Tecnico em Edificacoes pelo Centro Federal de Educacao Tecnologica de Alagoas (2000). Atualmente e Professor Adjunto da Universidade Federal de Alagoas na area de Linguagem e Representacao e desenvolve pesquisa com enfase em Projeto e Tecnologia de Arquitetura e Urbanismo e Conforto Ambiental, atuando principalmente nos seguintes temas: Projeto Arquitetonico, Ventilacao Natural, Desempenho Termico de Edificacoes, Arquitetura Bioclimatica e Simulacao Computacional."
+        bio: "Possui Graduação em Arquitetura e Urbanismo pela Universidade Federal de Alagoas (2007), Mestrado em Construção Civil pela Universidade Federal de São Carlos (2010), Doutorado em Arquitetura e Urbanismo pela Universidade de São Paulo (2013) e Curso Técnico em Edificações pelo Centro Federal de Educação Tecnológica de Alagoas (2000). Atualmente e Professor Adjunto da Universidade Federal de Alagoas na área de Linguagem e Representação e desenvolve pesquisa com ênfase em Projeto e Tecnologia de Arquitetura e Urbanismo e Conforto Ambiental, atuando principalmente nos seguintes temas: Projeto Arquitetônico, Ventilação Natural, Desempenho Térmico de Edificações, Arquitetura Bioclimatica e Simulação Computacional."
     },
     {
         nome: "Dr. Allan Cunha de Barros",
         curso: 1,
         image: "images/alancunha.jpg",
-        bio: "Possui graduacao em Engenharia Agronomica pela Universidade Federal de Sergipe (2006) e mestrado e doutorado em Irrigacao e Drenagem pela ESALQ-USP ( 2011). Atualmente e professor da Universidade Federal de Alagoas (UFAL). Tem experiencia na area de Engenharia Agricola, com enfase em Irrigacao e Drenagem, atuando principalmente nos seguintes temas: qualidade da irrigacao, entupimento de emissores, manejo da irrigacao, TDR, simulacao de crescimento de culturas."
+        bio: "Possui graduação em Engenharia Agronômica pela Universidade Federal de Sergipe (2006) e mestrado e doutorado em Irrigação e Drenagem pela ESALQ-USP ( 2011). Atualmente e professor da Universidade Federal de Alagoas (UFAL). Tem experiência na área de Engenharia Agricola, com ênfase em Irrigação e Drenagem, atuando principalmente nos seguintes temas: qualidade da irrigação, entupimento de emissores, manejo da irrigação, TDR, simulação de crescimento de culturas."
     },
     {
         nome: "Msc. Tania Voronkoff",
         image: "images/Perfil_Tania_Voronkoff.jpg",
         curso: 13,
-        bio: "Possui graduacao em Engenharia Civil pela Universidade Federal de Alagoas - UFAL (1984), pos - graduacao Latu Sensu em Formacao para Docencia do Ensino Superior pela Fundacao Educacional Jayme de Altavila - FEJAL (2001) e mestrado em Engenharia de Producao, na area de Gestao da Producao do NEP - Nucleo de Engenharia de Producao, da Universidade Federal da Paraiba - UFPB (2009). Lecionou nos Cursos de Engenharia Civil e Engenharia de Producao da Universidade Federal de Alagoas - Campus Sertao, as disciplinas:Engenharia de Produto I, Engenharia de Produto II,Engenharia de Metodos,Gestao de Residuos Solidos e Processos Produtivos . Atualmente e professora do Curso de Engenharia de Pesca da Unidade Penedo - Campus Arapiraca da Universidade Federal de Alagoas onde coordena o Curso de Engenharia de Producao."
+        bio: "Possui graduação em Engenharia Civil pela Universidade Federal de Alagoas - UFAL (1984), pos - graduação Latu Sensu em Formação para Docência do Ensino Superior pela Fundação Educacional Jayme de Altavila - FEJAL (2001) e mestrado em Engenharia de Produção, na área de Gestão da Produção do NEP - Nucleo de Engenharia de Produção, da Universidade Federal da Paraiba - UFPB (2009). Lecionou nos Cursos de Engenharia Civil e Engenharia de Produção da Universidade Federal de Alagoas - Campus Sertão, as disciplinas: Engenharia de Produto I, Engenharia de Produto II,Engenharia de Metodos,Gestão de Residuos Solidos e Processos Produtivos . Atualmente é professora do Curso de Engenharia de Pesca da Unidade Penedo - Campus Arapiraca da Universidade Federal de Alagoas onde coordena o Curso de Engenharia de Produção."
     },
     {
         nome: "Msc. Christiano Varady",
         image: "images/Perfil_Cristiano_Varady.jpg",
-        bio: "Engenheiro Civil formado pela Universidade Federal de Alagoas. Atualmente, e mestrando em Estruturas pela Universidade Federal de Alagoas e Especialista em Gerenciamento de Projetos pela Fundacao Getulio Vargas. Possui interesse nas areas de Gerenciamento de Projetos, Computacao Grafica e Correlacao de Imagens Digitais."
+        bio: "Engenheiro Civil formado pela Universidade Federal de Alagoas. Atualmente, e mestrando em Estruturas pela Universidade Federal de Alagoas e Especialista em Gerenciamento de Projetos pela Fundação Getulio Vargas. Possui interesse nas áreas de Gerenciamento de Projetos, Computação Grafica e Correlação de Imagens Digitais."
     },
     {
         nome: "Msc. Karlisson Andre",
         curso: 15,
         image: "images/karlisonandre.png",
-        bio: "Possui graduacao em Eng. Civil pela Universidade Federal de Alagoas (2007) e mestrado em Engenharia Civil pela Universidade Federal de Alagoas (2011). Tem experiencia na area de Engenharia Civil, com enfase em Engenharia Civil, atuando principalmente nos seguintes temas: residuo de construcao e demolicao, agregado, argamassa, reciclagem e concreto."
+        bio: "Possui graduação em Eng. Civil pela Universidade Federal de Alagoas (2007) e mestrado em Engenharia Civil pela Universidade Federal de Alagoas (2011). Tem experiência na área de Engenharia Civil, com ênfase em Engenharia Civil, atuando principalmente nos seguintes temas: resíduo de construção e demolição, agregado, argamassa, reciclagem e concreto."
     },
     {
         nome: "Dr. Rafaela Faciola",
         curso: 2,
         image: "images/rafaelafaciola.png",
-        bio: " Formada em Engenharia Civil pela Faculdade Ideal - FACI (2006). Mestre em Geotecnia pela Universidade de Sao Paulo - Escola de Engenharia de Sao Carlos (2009). Doutora em Geotecnia pela Universidade de Sao Paulo - Escola de Engenharia de Sao Carlos (2014). Professora Adjunta na Universidade Federal de Alagoas - UFAL, Campus do Sertao, no curso de Engenharia Civil, atuando nas areas de mecanica dos solos e fundacoes. Atua na area da Geotecnia Ambiental, com temas relacionados disposicao de residuos solidos, aterros sanitarios e solos expansivos."
+        bio: " Formada em Engenharia Civil pela Faculdade Ideal - FACI (2006). Mestre em Geotecnia pela Universidade de São Paulo - Escola de Engenharia de São Carlos (2009). Doutora em Geotecnia pela Universidade de São Paulo - Escola de Engenharia de São Carlos (2014). Professora Adjunta na Universidade Federal de Alagoas - UFAL, Campus do Sertão, no curso de Engenharia Civil, atuando nas áreas de mecanica dos solos e fundações. Atua na área da Geotecnia Ambiental, com temas relacionados disposição de residuos solidos, aterros sanitarios e solos expansivos."
     },
     {
         nome: "Dr. Juliane Marques",
         curso: 3,
         image: "images/Juliane_Marques_QEXTC1O.jpg",
-        bio: "Possui graduacao em Engenharia Civil pela Universidade Federal de Alagoas, mestrado em Engenharia Civil - USP - Escola de Engenharia de Sao Carlos e doutorado em Engenharia Civil pela Escola Politecnica da Universidade de Sao Paulo. Atualmente e professora adjunto A da Universidade Federal de Alagoas - UFAL, e responsavel tecnico da AGM Geotecnica Ltda. Tem experiencia na area de Engenharia Civil, com enfase em Engenharia de Solos / Geotecnia, atuando principalmente nos seguintes temas: fundacoes profundas e fundacoes superficiais, estacas moldadas in loco com bulbos, estacas escavadas a seco com aneis, provas de carga, reforco de fundacoes, instrumentacao em profundidade e pratica de fundacoes."
+        bio: "Possui graduação em Engenharia Civil pela Universidade Federal de Alagoas, mestrado em Engenharia Civil - USP - Escola de Engenharia de São Carlos e doutorado em Engenharia Civil pela Escola Politecnica da Universidade de São Paulo. Atualmente e professora adjunto A da Universidade Federal de Alagoas - UFAL, e responsavel tecnico da AGM Geotecnica Ltda. Tem experiência na área de Engenharia Civil, com ênfase em Engenharia de Solos / Geotecnia, atuando principalmente nos seguintes temas: fundações profundas e fundações superficiais, estacas moldadas in loco com bulbos, estacas escavadas a seco com aneis, provas de carga, reforco de fundações, instrumentação em profundidade e pratica de fundações."
     },
     {
         nome: "Msc. Alexandre Nascimento de Lima",
         curso: 4,
         image: "images/Alexandre_Lima_3muXQPc_OkXylbk.jpg",
-        bio: "Possui graduacao em Engenharia Civil pela Universidade Federal de Alagoas e Mestrado em Engenharia Civil area Estruturas. Atualmente e Professor Assistente na area de Materiais da Universidade Federal de Alagoas, no Campus do Sertao. Tem experiencia na area de Engenharia Civil, com enfase em Materiais e Componentes de Construcao e estruturas de concreto armado. Atualmente e Coordenador do Curso de Engenharia de Producao do Campus do Sertao."
+        bio: "Possui graduação em Engenharia Civil pela Universidade Federal de Alagoas e Mestrado em Engenharia Civil área Estruturas. Atualmente e Professor Assistente na área de Materiais da Universidade Federal de Alagoas, no Campus do Sertão. Tem experiência na área de Engenharia Civil, com ênfase em Materiais e Componentes de Construção e estruturas de concreto armado. Atualmente e Coordenador do Curso de Engenharia de Produção do Campus do Sertão."
     },
     {
         nome: "Msc. Viviane Regina Costa",
         curso: 12,
         image: "images/Viviane_Costa.jpg",
-        bio: "Graduada em Arquitetura e Urbanismo pela Universidade Federal de Alagoas (2006). Mestra em Arquitetura e Urbanismo pelo programa de Pos-Graduacao em Dinamicas do Espaco Habitado da Faculdade de Arquitetura e Urbanismo da Universidade Federal de Alagoas (2008). Doutoranda em Arquitetura e Urbanismo no Programa Dinamicas do Espaco Habitado da Faculdade de Arquitetura e Urbanismo da Universidade Federal de Alagoas.Professora do Eixo de Tecnologia da Universidade Federal de Alagoas do Campus do Sertao. Pesquisadora do Grupo de Pesquisa Morfologia dos Espacos de Uso Publico. Tem experiencia na area de Arquitetura e Urbanismo, atuando principalmente nos seguintes temas: sistemas de espacos livres; espacos urbanos de uso publico; apropriacao dos espacos, intervencao urbana, centralidades urbanas e areas de atividades mutliplas."
+        bio: "Graduada em Arquitetura e Urbanismo pela Universidade Federal de Alagoas (2006). Mestra em Arquitetura e Urbanismo pelo programa de Pos-Graduação em Dinamicas do Espaco Habitado da Faculdade de Arquitetura e Urbanismo da Universidade Federal de Alagoas (2008). Doutoranda em Arquitetura e Urbanismo no Programa Dinamicas do Espaco Habitado da Faculdade de Arquitetura e Urbanismo da Universidade Federal de Alagoas.Professora do Eixo de Tecnologia da Universidade Federal de Alagoas do Campus do Sertão. Pesquisadora do Grupo de Pesquisa Morfologia dos Espacos de Uso Publico. Tem experiência na área de Arquitetura e Urbanismo, atuando principalmente nos seguintes temas: sistemas de espaços livres; espaços urbanos de uso publico; apropriação dos espaços, intervenção urbana, centralidades urbanas e áreas de atividades multiplas."
     },
     {
         nome: "Dr. Aline Ramos",
         curso: 5,
         image: "images/Aline_Ramos_nM5yXAJ.jpg",
-        bio: "Possui graduacao em Engenharia Civil pela Universidade Federal de Alagoas (1987), mestrado em Engenharia Civil (Engenharia de Estruturas) pela Universidade de Sao Paulo (1992) e doutorado em Engenharia Civil (Engenharia de Estruturas) pela Universidade de Sao Paulo (2002). Atualmente e professor associado da Universidade Federal de Alagoas, e desenvolve pesquisas nas linhas: mecanica das estruturas, estruturas de concreto (moldado no local e pre-moldado), coordenacao modular e habitacao de interesse social. Participou da fundacao da Associacao Rede Metrologica de Alagoas-RMAL, atuou como Diretora Tecnica e atualmente exerce o cargo de Presidente da mesma. Exerce ainda o cargo de Presidente do Instituto de Desenvolvimento Cientifico e Tecnologico de Alagoas-ICTAL, orgao resonsavel pela gestao do Parque Tecnologico de Alagoas."
+        bio: "Possui graduação em Engenharia Civil pela Universidade Federal de Alagoas (1987), mestrado em Engenharia Civil (Engenharia de Estruturas) pela Universidade de São Paulo (1992) e doutorado em Engenharia Civil (Engenharia de Estruturas) pela Universidade de São Paulo (2002). Atualmente e professor associado da Universidade Federal de Alagoas, e desenvolve pesquisas nas linhas: mecânica das estruturas, estruturas de concreto (moldado no local e pré-moldado), coordenação modular e habitação de interesse social. Participou da fundação da Associação Rede Metrologica de Alagoas-RMAL, atuou como Diretora Técnica e atualmente exerce o cargo de Presidente da mesma. Exerce ainda o cargo de Presidente do Instituto de Desenvolvimento Cientifico e Tecnologico de Alagoas-ICTAL, orgão responsável pela gestão do Parque Tecnológico de Alagoas."
     },
     {
         nome: "Dr. Antonio Netto",
         curso: 6,
         image: "images/Antonio_Netto_mNyh1HC.jpg",
-        bio: "Possui graduacao em Engenharia Civil pela Universidade Federal de Alagoas (UFAL) e Pos-graduacao (Mestrado e Doutorado) pela Escola de Engenharia de Sao Carlos - EESC da Universidade de Sao Paulo - USP. Tem experiencia na area de Engenharia Ambiental, com enfase em tratamento de aguas residuarias, atuando principalmente nos seguintes temas: licenciamento ambiental, projeto e execucao de estacoes de tratamento de agua e esgoto, tratamento combinado anaerobio-aerobio de esgoto sanitario, reator de leito fixo operado de modo continuo e avaliacao de projetos de melhorias habitacionais e sanitarias."
+        bio: "Possui graduação em Engenharia Civil pela Universidade Federal de Alagoas (UFAL) e Pos-graduação (Mestrado e Doutorado) pela Escola de Engenharia de São Carlos - EESC da Universidade de São Paulo - USP. Tem experiência na área de Engenharia Ambiental, com ênfase em tratamento de aguas residuarias, atuando principalmente nos seguintes temas: licenciamento ambiental, projeto e execução de estações de tratamento de agua e esgoto, tratamento combinado anaerobio-aeróbio de esgoto sanitario, reator de leito fixo operado de modo continuo e avaliação de projetos de melhorias habitacionais e sanitarias."
     },
     {
         nome: "Msc. Dalgoberto Miquilino",
         curso: 7,
         image: "images/Dalgoberto_Miquilino_ihOU1MW.jpg",
-        bio: "Graduado em Sistemas de Informacao pela Faculdade de Alagoas, Mestre em Modelagem Computacional do Conhecimento pela Universidade Federal de Alagoas-UFAL. Pesquisador de areas relacionadas a Gerenciamento de Projetos, Educacao a distancia, usabilidade e AVA. Experiencia em EAD como tutor de sala, tutor-online e professor. Experiencia em Docencia no Ensino Superior tendo atuado como professor nas areas de tecnologia da informacao, gestao de negocios, gestao educacional e gerenciamento de projetos em diversas instituicoes de ensino como Faculdade Mauricio de Nassau, FGV, UNOPAR, UFAL-UAB, a nivel de graduacao e pos-graduacao. Possui experiencia em Gestao educacional onde ja atuou como coordenador de graduacao e Coordenador-Geral de Pos-graduacao na Faculdade Mauricio de Nassau. Trabalha com projetos web, arquitetura da informacao, gerencia de projetos e ministra aulas ha 15 anos. Atualmente atua como docente Assistente na Universidade Federal de Alagoas-Campus do Sertao, lecionando disciplinas na area de Computacao, Sistemas de Informacao e Gerenciamento de Riscos nos cursos de Engenharia civil e Engenharia de Producao."
+        bio: "Graduado em Sistemas de Informação pela Faculdade de Alagoas, Mestre em Modelagem Computacional do Conhecimento pela Universidade Federal de Alagoas-UFAL. Pesquisador de áreas relacionadas a Gerenciamento de Projetos, Educação a distancia, usabilidade e AVA. Experiência em EAD como tutor de sala, tutor-online e professor. Experiência em Docência no Ensino Superior tendo atuado como professor nas áreas de tecnologia da informação, gestão de negocios, gestão educacional e gerenciamento de projetos em diversas instituições de ensino como Faculdade Mauricio de Nassau, FGV, UNOPAR, UFAL-UAB, a nivel de graduação e pos-graduação. Possui experiência em Gestão educacional onde ja atuou como coordenador de graduação e Coordenador-Geral de Pos-graduação na Faculdade Mauricio de Nassau. Trabalha com projetos web, arquitetura da informação, gerência de projetos e ministra aulas ha 15 anos. Atualmente atua como docente Assistente na Universidade Federal de Alagoas-Campus do Sertão, lecionando disciplinas na área de Computação, Sistemas de Informação e Gerenciamento de Riscos nos cursos de Engenharia civil e Engenharia de Produção."
     },
     {
         nome: " Dra. Wanessa Cartaxo Soares",
+        curso: 16,
         image: "images/Wanessa_Soares.jpg",
-        bio: "Possui graduacao em Engenharia Civil pela Universidade Federal da Paraiba (2002); Mestrado em Geotecnia pela Universidade de Sao Paulo (USP) (2005) e Doutorado em Ciencias (Programa: Geotecnia) pela Universidade de Sao Paulo (USP) (2011) . Atualmente e Diretora Tecnica das empresas Concresolo Consultoria em Concreto e Solos Ltda. e Copesolo Estacas e Fundacoes Ltda. Atualmente e professora da disciplina de Fundacoes no Curso de Engenharia Civil do Centro Universitario de Joao Pessoa (UNIPe), onde tambem ministrou a disciplina de Geologia e Mecanica dos Solos. Tem experiencia na area de EngenhariaCivil, com enfase em Fundacoes, Contencoes e Mapeamento Geotecnico."
+        bio: "Possui graduação em Engenharia Civil pela Universidade Federal da Paraiba (2002); Mestrado em Geotecnia pela Universidade de São Paulo (USP) (2005) e Doutorado em Ciências (Programa: Geotecnia) pela Universidade de São Paulo (USP) (2011) . Atualmente é Diretora Técnica das empresas Concresolo Consultoria em Concreto e Solos Ltda. e Copesolo Estacas e Fundações Ltda. Atualmente é professora da disciplina de Fundações no Curso de Engenharia Civil do Centro Universitario de João Pessoa, onde também ministrou a disciplina de Geologia e Mecânica dos Solos. Tem experiência na área de Engenharia Civil, com ênfase em Fundações, Contenções e Mapeamento Geotécnico."
     },
     {
-        nome: "Eng. Joao Guilherme Lessa Rocha",
+        nome: "Eng. João Guilherme Lessa Rocha",
         curso: 8,
         image: "images/joaozito.jpg",
-        bio: "Possui graduacao em Engenharia Civil pelo Centro Universitario CESMAC (2014). Pos graduado em Engenharia de Seguranca do Trabalho pela Faculdade Figueiredo Costa. Coordenador Tecnico da empresa SOMA Engenharia e Consultoria. "
+        bio: "Possui graduação em Engenharia Civil pelo Centro Universitario CESMAC (2014). Pos graduado em Engenharia de Segurança do Trabalho pela Faculdade Figueiredo Costa. Coordenador Técnico da empresa SOMA Engenharia e Consultoria. "
     },
     {
         nome: "Aline Espindola",
         curso: 9,
         image: "images/Aline_Espindola_YcYi5eR.jpg",
-        bio: "Possui graduacao em Engenharia Civil pela Universidade Federal de Alagoas (2012) e mestrado em Engenharia de Transportes pelo Instituto Militar de Engenharia (2014). Atualmente e professor assistente i da Universidade Federal de Alagoas."
+        bio: "Possui graduação em Engenharia Civil pela Universidade Federal de Alagoas (2012) e mestrado em Engenharia de Transportes pelo Instituto Militar de Engenharia (2014). Atualmente é professor assistente da Universidade Federal de Alagoas."
     },
     {
         nome: " Msc. Emerson Lima ",
         curso: 11,
         image: "images/emerson_cortada_YQeNmJc.jpg",
-        bio: "Possui graduacao em Ciencia da Computacao pela Universidade Federal de Alagoas (2002), especializacao em Automacao Industrial (2011) e mestrado em Informatica pela Universidade Federal de Campina Grande (2004), concluido com distincao. Atualmente e professor do Instituto Federal de Educacao, Ciencia e Tecnologia de Alagoas, atuando tambem como Chefe do Departamento de Apoio Academico. Tambem e coordenador do Grupo de Robotica do IFAL, tendo recebido a Comenda Cientifica Dr. Samuel Cunha pelos trabalhos desenvolvidos com o grupo (2011). Tem experiencia na area de Ciencia da Computacao, com enfase em Engenharia de Software e Robotica, atuando principalmente nos seguintes temas: agentes moveis, padroes de projeto, metodos formais, informatica na educacao, prototipagem e reciclagem de lixo tecnologico. "
+        bio: "Possui graduação em Ciência da Computação pela Universidade Federal de Alagoas (2002), especialização em Automação Industrial (2011) e mestrado em Informatica pela Universidade Federal de Campina Grande (2004), concluido com distinção. Atualmente é professor do Instituto Federal de Educação, Ciência e Tecnologia de Alagoas, atuando tambem como Chefe do Departamento de Apoio Acadêmico. Tambem e coordenador do Grupo de Robotica do IFAL, tendo recebido a Comenda Cientifica Dr. Samuel Cunha pelos trabalhos desenvolvidos com o grupo (2011). Tem experiência na área de Ciência da Computação, com ênfase em Engenharia de Software e Robótica, atuando principalmente nos seguintes temas: agentes móveis, padroes de projeto, metodos formais, informatica na educação, prototipagem e reciclagem de lixo tecnologico. "
     },
     {
         nome: "Dr. Eduardo Lucena",
         curso: 10,
         image: "images/Eduardo_Amorim_hIcegVF.png",
-        bio: "Possui graduacao em Engenharia Civil pela Universidade Federal de Alagoas-UFAL (2005), mestrado em Engenharia Hidraulica e Saneamento pela Escola de Engenharia de Sao Carlos (EESC) da Universidade de Sao Paulo-USP (2007) e doutorado em Engenharia Hidraulica e Saneamento pela Universidade de Sao Paulo (2009). Atualmente e professor adjunto e coordenador do curso de Engenharia Ambiental e Sanitaria e pesquisador do Centro de Tecnologia da Universidade Federal de Alagoas(UFAL). Responsavel pelas disciplinas de Avaliacao de Impacto Ambiental, Analise de Risco e Tratamento de Efluentes. e professor do programas de pos-graduacao em Recursos Hidricos e Saneamento do Centro de Tecnologia e Energia da Biomassa do Centro de Ciencias Agrarias da UFAL. Revisor de periodico da International Journal of Hydrogen Energy, Journal of Chemical Technology and Biotechnology e REGA Revista de Gestao de aguas da America Latina. Tem experiencia na area de Engenharia Hidraulica e Saneamento, com enfase em Tratamento de aguas Residuarias, atuando principalmente nos seguintes temas: tratamento anaerobio de aguas residuarias contendo compostos toxicos (fenol), reator de anaerobio de leito fluidificado, producao biologica de hidrogenio a partir de aguas residuarias e producao de bionergia. "
+        bio: "Possui graduação em Engenharia Civil pela Universidade Federal de Alagoas-UFAL (2005), mestrado em Engenharia Hidráulica e Saneamento pela Escola de Engenharia de São Carlos (EESC) da Universidade de São Paulo-USP (2007) e doutorado em Engenharia Hidráulica e Saneamento pela Universidade de São Paulo (2009). Atualmente é professor adjunto e coordenador do curso de Engenharia Ambiental e Sanitaria e pesquisador do Centro de Tecnologia da Universidade Federal de Alagoas(UFAL). Responsavel pelas disciplinas de Avaliação de Impacto Ambiental, Análise de Risco e Tratamento de Efluentes. e professor do programas de pos-graduação em Recursos Hidricos e Saneamento do Centro de Tecnologia e Energia da Biomassa do Centro de Ciências Agrarias da UFAL. Revisor de periodico da International Journal of Hydrogen Energy, Journal of Chemical Technology and Biotechnology e REGA Revista de Gestão de aguas da America Latina. Tem experiência na área de Engenharia Hidraulica e Saneamento, com ênfase em Tratamento de águas Residuárias, atuando principalmente nos seguintes temas: tratamento anaeróbio de águas residuárias contendo compostos tóxicos (fenol), reator de anaeróbio de leito fluidificado, produção biológica de hidrogênio a partir de águas residuárias e produção de bionergia. "
     },
     {
         nome: "Msc. Felipe Souza",
         curso: 14,
         image: "images/Felipe_Souza.jpg",
-        bio: "Possui graduacao (2007) e mestrado (2010) em Engenharia de Producao pela Universidade Federal de Pernambuco. Atualmente e Professor Assistente de Metodos Quantitativos e Gestao de Operacoes na Faculdade de Economia, Administracao e Contabilidade da Universidade Federal de Alagoas."
+        bio: "Possui graduação (2007) e mestrado (2010) em Engenharia de Produção pela Universidade Federal de Pernambuco. Atualmente e Professor Assistente de Metodos Quantitativos e Gestão de Operações na Faculdade de Economia, Administração e Contabilidade da Universidade Federal de Alagoas."
     },
 
     {
         nome: "Msc. Elvys Soares",
         image: "images/elvys_cortada_GXwj38E.jpg",
-        bio: "Possui graduacao em Bacharelado em Ciencia da Computacao pela Universidade Federal de Alagoas (2004), formacao complementar em Analise de Testes, promovida pela Universidade Federal de Pernambuco em parceria com a Motorola (2005) e mestrado em Modelagem Computacional de Conhecimento pela Universidade Federal de Alagoas (2009). Atualmente e professor do Instituto Federal de Educacao, Ciencia e Tecnologia de Alagoas. Tem experiencia na area de Ciencia da Computacao, com enfase em Engenharia de Software e Inteligencia Artificial."
+        bio: "Possui graduação em Bacharelado em Ciência da Computação pela Universidade Federal de Alagoas (2004), formação complementar em Analise de Testes, promovida pela Universidade Federal de Pernambuco em parceria com a Motorola (2005) e mestrado em Modelagem Computacional de Conhecimento pela Universidade Federal de Alagoas (2009). Atualmente e professor do Instituto Federal de Educação, Ciência e Tecnologia de Alagoas. Tem experiência na área de Ciência da Computação, com ênfase em Engenharia de Software e Inteligência Artificial."
     },
     {
         nome: "João Constantino",
@@ -264,7 +269,7 @@ $(document).delegate("#view_item", "pageinit", function () {
     });
 });
 
-// esta funcao refresh lista e delega metodo de click para cada item.
+// esta função refresh lista e delega metodo de click para cada item.
 function refresh_list() {
     for (var i = 1; i < 5; i++) {
         var l = $("#lista-" + i);
