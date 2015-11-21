@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="themes/Semenge_verde2.min.css" />
-    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <link rel="stylesheet" href="themes/Semenge_verde2.min.css"/>
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css"/>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
@@ -70,7 +70,7 @@
                data-iconshadow="false" class="ui-btn-left"
                class="ui-icon-nodisc">Menu</a>
         </div>
-        <center><img src="images/cabecalho.png"></center>
+        <center><img src="images/cabecalho2.png"></center>
         <div class="custom-border-radius">
             <a href="#info" data-role="button" data-iconpos="notext" data-icon="info"
                data-shadow="false" data-rel="dialog" data-transition="flip"
@@ -81,8 +81,10 @@
     <!-- /header -->
     <!------------------------------------------------------------------------------------------------MENU Contato-->
     <div data-role="panel" data-display="push" id="nav">
-        <ul data-role="listview" data-theme="c" >
-            <li data-icon="delete"><a href="#" data-rel="close"><center>Menu</center></a></li>
+        <ul data-role="listview" data-theme="a">
+            <li data-icon="delete"><a href="#" data-rel="close">
+                <center>Menu</center>
+            </a></li>
             <li><a href="index.html" data-rel="close">Programacao</a></li>
             <li><a href="evento.html">O Evento</a></li>
             <li><a href="mapa.html">Mapa</a></li>
@@ -90,19 +92,22 @@
             <li><a href="patrocinadores.html">Patrocinadores</a></li>
             <li>
                 <div data-role="collapsible">
-                    <h3>Contato</h3>
-                    <form>
-                    <ul data-role="listview">
-                        <i class="list-divider"></i>
-                        <label for="nome">Nome:</label>
-                        <input type="text" name="nome" id="nome" value="">
-                        <label for="comentario">Comentário:</label>
-                        <textarea cols="40" rows="8" name="comentario" id="comentario"></textarea>
-                    </ul>
-                    <hr/>
-                    <input data-theme="b" type="submit" onclick="postFormToGoogle()" data-role="button" value="ENVIAR"></input>
-                </form>
-                </div><!-- /collapsible -->
+                        <h3>Contato</h3>
+                        
+                    <form>
+                        <ul data-role="listview">
+                            <i class="list-divider"></i>
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nome" id="nome" value="">
+                            <label for="comentario">Comentário:</label>
+                            <textarea cols="40" rows="8" name="comentario" id="comentario"></textarea>
+                        </ul>
+                        <hr/>
+                        <input data-theme="b" type="submit" onclick="postFormToGoogle()" data-role="button"
+                               value="ENVIAR"></input>
+                    </form>
+                </div>
+                <!-- /collapsible -->
             </li>
         </ul>
     </div>
@@ -130,7 +135,7 @@
                     <li data-role="list-divider">
                         Terça, 8 de Dezembro de 2015
                     </li>
-                    <li>
+                    <li data-icon="false">
                         <a href="#">
                             <p class="my_icon_wrapper">
                                 <img src="images/semenge.png" width="80" height="80">
@@ -145,7 +150,7 @@
                                     class="plinha">17:00</strong></p>
                         </a>
                     </li>
-                    <li>
+                    <li data-icon="false">
                         <a href="#">
                             <p class="my_icon_wrapper">
                                 <img src="images/semenge.png" width="80" height="80">
@@ -163,10 +168,10 @@
                     <li data-role="list-divider">
                         <center>Tarde</center>
                     </li>
-                    <li data-ind="20">
-                        <a href="#">
+                    <li>
+                        <a href="view_startup.html">
                             <p class="my_icon_wrapper">
-                                <img src="images/semenge.png" width="80" height="80">
+                                <img src="images/5.jpg" width="80" height="80">
                             </p>
 
                             <div class="content_list">
@@ -174,13 +179,13 @@
 
                                 <p><strong>Local: Auditório Graciliano Ramos</strong></p>
                             </div>
-                            <p class="ui-li-aside"><strong class="plinha">15:00</strong></p>
+                            <p class="ui-li-aside"><strong class="plinha">14:00</strong></p>
                         </a>
                     </li>
                     <li data-role="list-divider">
                         <center>Noite</center>
                     </li>
-                    <li>
+                    <li data-icon="false">
                         <a href="#">
                             <p class="my_icon_wrapper">
                                 <img src="images/semenge.png" width="80" height="80">
@@ -192,7 +197,7 @@
                             <p class="ui-li-aside"><strong class="plinha">19:30</strong></p>
                         </a>
                     </li>
-                    <li>
+                    <li data-icon="false">
                         <a href="#">
                             <p class="my_icon_wrapper">
                                 <img src="images/gustavo-lopes.jpg" width="80" height="80">
@@ -208,10 +213,10 @@
                             <p class="ui-li-aside"><strong class="plinha">20:00</strong></p>
                         </a>
                     </li>
-                    <li>
+                    <li data-icon="false">
                         <a href="#">
                             <p class="my_icon_wrapper">
-                                <img src="images/user.png" width="80" height="80">
+                                <img src="images/1.jpg" width="80" height="80">
                             </p>
 
                             <div class="content_list">
@@ -224,10 +229,10 @@
                             <p class="ui-li-aside"><strong class="plinha">21:00</strong></p>
                         </a>
                     </li>
-                    <li>
+                    <li data-icon="false">
                         <a href="#">
                             <p class="my_icon_wrapper">
-                                <img src="images/cocktail.png" width="80" height="80">
+                                <img src="images/6.jpg" width="80" height="80">
                             </p>
 
                             <div class="content_list">
@@ -245,7 +250,7 @@
                     <li data-role="list-divider">
                         Quarta, 9 de Dezembro de 2015
                     </li>
-                    <li>
+                    <li data-icon="false">
                         <a href="#">
                             <p class="my_icon_wrapper">
                                 <img src="images/semenge.png" width="80" height="80">
@@ -271,7 +276,7 @@
 
                                 <p><strong>Minicurso 1: Risco em Obras </strong></p>
 
-                                <p><strong>Local: Sala 06</strong></p>
+                                <p><strong>Local: Mini auditório</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
                         </a>
@@ -359,10 +364,27 @@
                             <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
                         </a>
                     </li>
-                    <li>
+                    <li data-ind="22">
                         <a href="#">
                             <p class="my_icon_wrapper">
-                                <img src="images/coffee.png" width="80" height="80">
+                                <img src="images/Wellinsilvio.jpg" width="80" height="80">
+                            </p>
+
+                            <div class="content_list">
+                                <h4>MSc. Wellinsilvio Costa</h4>
+
+                                <p><strong>Minicurso 20: Projeto Luminotécnico pelo método dos Lúmens e pelo Software DIALux </strong></p>
+
+                                <p><strong>Local: Sala 05</strong></p>
+                                <p>Requisito: Notebook com DIALux (Verificar software antecipadamente com a comissão)</p>
+                            </div>
+                            <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
+                        </a>
+                    </li>
+                    <li data-icon="false">
+                        <a href="#">
+                            <p class="my_icon_wrapper">
+                                <img src="images/7.jpg" width="80" height="80">
                             </p>
 
                             <div class="content_list">
@@ -376,7 +398,7 @@
                     <li data-role="list-divider">
                         <center>Tarde</center>
                     </li>
-                    <li>
+                    <li data-icon="false">
                         <a href="#">
                             <p class="my_icon_wrapper">
                                 <img src="images/semenge.png" width="80" height="80">
@@ -390,10 +412,10 @@
                             <p class="ui-li-aside"><strong class="plinha">14:00</strong></p>
                         </a>
                     </li>
-                    <li>
+                    <li data-icon="false">
                         <a href="#">
                             <p class="my_icon_wrapper">
-                                <img src="images/user.png" width="80" height="80">
+                                <img src="images/1.jpg" width="80" height="80">
                             </p>
 
                             <div class="content_list">
@@ -406,10 +428,10 @@
                             <p class="ui-li-aside"><strong class="plinha">16:20</strong></p>
                         </a>
                     </li>
-                    <li>
+                    <li data-icon="false">
                         <a href="#">
                             <p class="my_icon_wrapper">
-                                <img src="images/user.png" width="80" height="80">
+                                <img src="images/1.jpg" width="80" height="80">
                             </p>
 
                             <div class="content_list">
@@ -510,15 +532,15 @@
 
                                 <p><strong>Minicurso 12: Introdução ao estudo de Pontes</strong></p>
 
-                                <p><strong>Local: Sala 09</strong></p>
+                                <p><strong>Local: mini auditório</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
                         </a>
                     </li>
-                    <li>
+                    <li data-icon="false">
                         <a href="#">
                             <p class="my_icon_wrapper">
-                                <img src="images/coffee.png" width="80" height="80">
+                                <img src="images/7.jpg" width="80" height="80">
                             </p>
 
                             <div class="content_list">
@@ -532,7 +554,7 @@
                     <li data-role="list-divider">
                         <center>Tarde</center>
                     </li>
-                    <li>
+                    <li data-icon="false">
                         <a href="#">
                             <p class="my_icon_wrapper">
                                 <img src="images/semenge.png" width="80" height="80">
@@ -546,10 +568,10 @@
                             <p class="ui-li-aside"><strong class="plinha">14:00</strong></p>
                         </a>
                     </li>
-                    <li>
+                    <li data-icon="false">
                         <a href="#">
                             <p class="my_icon_wrapper">
-                                <img src="images/user.png" width="80" height="80">
+                                <img src="images/1.jpg" width="80" height="80">
                             </p>
 
                             <div class="content_list">
@@ -625,8 +647,9 @@
 
                                 <p><strong>Minicurso 15: Ferramentas estatísticas com o uso de planilhas
                                     eletrônicas</strong></p>
+                                <p><strong>Local: Sala de pranchetas</strong></p>
+                                <p>Requisito: Computador com software Excel</p>
 
-                                <p><strong>Local: Sala 02</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
                         </a>
@@ -680,27 +703,43 @@
                             <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
                         </a>
                     </li>
+                    <li data-ind="21">
+                        <a href="#">
+                            <p class="my_icon_wrapper">
+                                <img src="images/Ligia_Lobo.jpg" width="80" height="80">
+                            </p>
+
+                            <div class="content_list">
+                                <h4>MSc. Lígia Lobo</h4>
+
+                                <p><strong>Minicurso 19: "Lean Manufacturing" – Manufatura Enxuta</strong></p>
+
+                                <p><strong>Local: Sala 02</strong></p>
+                            </div>
+                            <p class="ui-li-aside"><strong class="plinha">08:00</strong></p>
+                        </a>
+                    </li>
                     <li data-role="list-divider">
                         <center>Tarde</center>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="view_forum.html">
                             <p class="my_icon_wrapper">
-                                <img src="images/semenge.png" width="80" height="80">
+                                <img src="images/4.jpg" width="80" height="80">
                             </p>
 
                             <div class="content_list">
                                 <h4>Fórum de Mercado das Engenharias</h4>
 
-                                <p><strong>Local: Audiotório Graciliano Ramos</strong></p>
+                                <p><strong>Local: Auditório Graciliano Ramos</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">14:00</strong></p>
                         </a>
                     </li>
-                    <li>
+                    <li data-icon="false">
                         <a href="#">
                             <p class="my_icon_wrapper">
-                                <img src="images/user.png" width="80" height="80">
+                                <img src="images/1.jpg" width="80" height="80">
                             </p>
 
                             <div class="content_list">
@@ -708,7 +747,7 @@
 
                                 <p><strong>Gestão Empresarial envolvendo casos de sucesso</strong></p>
 
-                                <p><strong>Local: Audiotório Graciliano Ramos</strong></p>
+                                <p><strong>Local: Auditório Graciliano Ramos</strong></p>
                             </div>
                             <p class="ui-li-aside"><strong class="plinha">17:00</strong></p>
                         </a>
@@ -716,10 +755,10 @@
                     <li data-role="list-divider">
                         <center>Noite</center>
                     </li>
-                    <li>
+                    <li data-icon="false">
                         <a href="#">
                             <p class="my_icon_wrapper">
-                                <img src="images/semenge.png" width="80" height="80">
+                                <img src="images/3.png" width="80" height="80">
                             </p>
 
                             <div class="content_list">
@@ -730,10 +769,10 @@
                             <p class="ui-li-aside"><strong class="plinha">18:00</strong></p>
                         </a>
                     </li>
-                    <li>
+                    <li data-icon="false">
                         <a href="#">
                             <p class="my_icon_wrapper">
-                                <img src="images/cocktail.png" width="80" height="80">
+                                <img src="images/6.jpg" width="80" height="80">
                             </p>
 
                             <div class="content_list">
@@ -767,16 +806,21 @@
     </div>
     <div role="main" class="ui-content">
         <center>
-            <img src="images/TESTE_CINZA.png" height="50">
+            <img src="images/logo-semenge.png" height="100">
         </center>
         <br/>
         <hr/>
         <p><strong>
-            3ª Semana de Engenharia do Campus do Sertão é um evento que está sendo organizado por uma comissão
-            formada por alunos e professores do eixo da tecnologia da Universidade Federal de Alagoas do Campus do
-            Sertão, em Delmiro Gouveia, a ser realizada entre os dias 08 a 11 de Dezembro de 2015. O evento tem como
-            tema as Multifaces da Engenharia. A Semenge contará com palestras, minicursos e apresentação de
-            trabalhos científicos, estes abrangendo diversas áreas do conhecimento.
+            "O Campus do Sertão da Universidade Federal de Alagoas, através de seus cursos de Engenharia Civil e
+            Engenharia de Produção, em parceria com o Programa de Educação Tutorial - PET Engenharias, tem a honra de
+            convidar a comunidade acadêmica e os demais profissionais para participar da III Semana de Engenharia -
+            SEMENGE. O evento será realizado de 08 a 11 de dezembro de 2015 em Delmiro Gouveia - AL.
+
+            Esta terceira edição da SEMENGE tem como tema as "Multifaces da Engenharia", a qual contará com palestras e
+            minicursos de diversas áreas da engenharia ministrados por personalidades de renome nacional. Além disso,
+            fará parte da programação do evento a apresentação de trabalhos científicos com premiação para os destaques.
+            O objetivo do evento é oferecer atividades que envolvam as diversas áreas da engenharia, a fim de buscar a
+            interação dos discentes e a comunidade com as inovações do mercado de trabalho e a tecnologia."
         </strong></p>
         <br/>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6620.904922164352!2d-37.98868001349609!3d-9.349755083522577!2m3!1f0!2f0!3f0!3m2!1i24!2i768!4f13.1!3m3!1m2!1s0x7092752f4bf42e1%3A0x829e278d9a333861!2sUFAL+-+Campus+do+Sert%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1445693446090"
@@ -811,41 +855,41 @@
 
 
 <script>
-//    openPhotoSwipe = function() {
-//        var pswpElement = document.querySelectorAll('.pswp')[0];
-//
-//        // build items array
-//        var items = [
-//            {
-//                src: 'images/mapa1.png',
-//                w: 964,
-//                h: 1024
-//            },
-//            {
-//                src: 'images/mapa2.png',
-//                w: 1024,
-//                h: 683
-//            }
-//        ];
-//
-//        // define options (if needed)
-//        var options = {
-//            // history & focus options are disabled on CodePen
-//            history: false,
-//            focus: false,
-//
-//            showAnimationDuration: 0,
-//            hideAnimationDuration: 0
-//
-//        };
-//
-//        var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-//        gallery.init();
-//    };
-//
-//    //openPhotoSwipe();
-//
-//    document.getElementById('view_map_btn').onclick = openPhotoSwipe;
+    //    openPhotoSwipe = function() {
+    //        var pswpElement = document.querySelectorAll('.pswp')[0];
+    //
+    //        // build items array
+    //        var items = [
+    //            {
+    //                src: 'images/mapa1.png',
+    //                w: 964,
+    //                h: 1024
+    //            },
+    //            {
+    //                src: 'images/mapa2.png',
+    //                w: 1024,
+    //                h: 683
+    //            }
+    //        ];
+    //
+    //        // define options (if needed)
+    //        var options = {
+    //            // history & focus options are disabled on CodePen
+    //            history: false,
+    //            focus: false,
+    //
+    //            showAnimationDuration: 0,
+    //            hideAnimationDuration: 0
+    //
+    //        };
+    //
+    //        var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+    //        gallery.init();
+    //    };
+    //
+    //    //openPhotoSwipe();
+    //
+    //    document.getElementById('view_map_btn').onclick = openPhotoSwipe;
 </script>
 </body>
 </html>

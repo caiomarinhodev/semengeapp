@@ -45,7 +45,7 @@
                data-iconshadow="false" class="ui-btn-left"
                class="ui-icon-nodisc">Menu</a>
         </div>
-        <center><img src="images/cabecalho.png"></center>
+        <center><img src="images/cabecalho2.png"></center>
         <div class="custom-border-radius">
             <a href="index.html" data-role="button" data-iconpos="notext" data-icon="back"
                data-shadow="false" data-iconshadow="false" class="ui-btn-right"
@@ -54,8 +54,10 @@
     </div>
 
     <div data-role="panel" data-display="push" id="nav">
-        <ul data-role="listview" data-theme="c" >
-            <li data-icon="delete"><a href="#" data-rel="close"><center>Menu</center></a></li>
+        <ul data-role="listview" data-theme="a">
+            <li data-icon="delete"><a href="#" data-rel="close">
+                <center>Menu</center>
+            </a></li>
             <li><a href="index.html">Programacao</a></li>
             <li><a href="evento.html" data-rel="close">O Evento</a></li>
             <li><a href="mapa.html">Mapa</a></li>
@@ -64,18 +66,21 @@
             <li>
                 <div data-role="collapsible">
                         <h3>Contato</h3>
-                        <form>
-                    <ul data-role="listview">
-                        <i class="list-divider"></i>
-                        <label for="nome">Nome:</label>
-                        <input type="text" name="nome" id="nome" value="">
-                        <label for="comentario">Comentário:</label>
-                        <textarea cols="40" rows="8" name="comentario" id="comentario"></textarea>
-                    </ul>
-                    <hr/>
-                    <input data-theme="b" type="submit" onclick="postFormToGoogle()" data-role="button" value="ENVIAR"></input>
-                </form>
-                </div><!-- /collapsible -->
+                        
+                    <form>
+                        <ul data-role="listview">
+                            <i class="list-divider"></i>
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nome" id="nome" value="">
+                            <label for="comentario">Comentário:</label>
+                            <textarea cols="40" rows="8" name="comentario" id="comentario"></textarea>
+                        </ul>
+                        <hr/>
+                        <input data-theme="b" type="submit" onclick="postFormToGoogle()" data-role="button"
+                               value="ENVIAR"></input>
+                    </form>
+                </div>
+                <!-- /collapsible -->
             </li>
         </ul>
     </div>
@@ -88,11 +93,16 @@
         <br/>
         <hr/>
         <p><strong>
-            3ª Semana de Engenharia do Campus do Sertão é um evento que está sendo organizado por uma comissão
-            formada por alunos e professores do eixo da tecnologia da Universidade Federal de Alagoas do Campus do
-            Sertão, em Delmiro Gouveia, a ser realizada entre os dias 08 a 11 de Dezembro de 2015. O evento tem como
-            tema as Multifaces da Engenharia. A Semenge contará com palestras, minicursos e apresentação de
-            trabalhos científicos, estes abrangendo diversas áreas do conhecimento.
+            "O Campus do Sertão da Universidade Federal de Alagoas, através de seus cursos de Engenharia Civil e
+            Engenharia de Produção, em parceria com o Programa de Educação Tutorial - PET Engenharias, tem a honra de
+            convidar a comunidade acadêmica e os demais profissionais para participar da III Semana de Engenharia -
+            SEMENGE. O evento será realizado de 08 a 11 de dezembro de 2015 em Delmiro Gouveia - AL.
+
+            Esta terceira edição da SEMENGE tem como tema as "Multifaces da Engenharia", a qual contará com palestras e
+            minicursos de diversas áreas da engenharia ministrados por personalidades de renome nacional. Além disso,
+            fará parte da programação do evento a apresentação de trabalhos científicos com premiação para os destaques.
+            O objetivo do evento é oferecer atividades que envolvam as diversas áreas da engenharia, a fim de buscar a
+            interação dos discentes e a comunidade com as inovações do mercado de trabalho e a tecnologia."
         </strong></p>
         <br/>
         <center>

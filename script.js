@@ -58,7 +58,7 @@ var curses = [
     },
     {
         titulo:"Projeto & Desenvolvimento – Produtos Sustentáveis",
-        descricao: ""
+        descricao: "O minicurso se estruturará em : Introdução, Definição, Noções do Sistema Lean ( Toyota ) de desenvolvimento de novos produtos para utilização em empresas brasileiras, Produto Sustentável e Oficina Prática."
     },
     {
         titulo: "Modelagem Matemática",
@@ -71,6 +71,14 @@ var curses = [
     {
         titulo: "Mapeamento geotécnico com sondagens e suas aplicações em obras de fundações",
         descricao: "O Minicurso abordará a implantação de banco de dados geológico - geotécnicos a partir de sondagens à percussão e sua aplicação em atividades de planejamento, cálculo e execução de obras de fundações. Serão abordadas noções de realização e interpretação de sondagens à percussão com SPT, seu uso no Mapeamento Geotécnico e como os diferentes tipos de perfis geotécnicos direcionam a escolha do tipo de fundação. Como exemplo, serão demonstrados casos de obras envolvendo a ferramenta."
+    },
+    {
+        titulo: "'Lean Manufacturing' – Manufatura Enxuta",
+        descricao: "Como trabalhar no sentido de reduzir estoques, evitar desperdícios, e ganhar, descobrindo o que agrega e não agrega valor à produção."
+    },
+    {
+        titulo: "Projeto Luminotécnico pelo método dos Lúmens e pelo Software DIALux",
+        descricao: "O projeto luminotécnico e a verificação de iluminação em ambientes sofreram mudanças com a criação NBR ISSO 8995-1. O minicurso tem o objetivo de detalhar essas mudanças, e realizar o projeto à partir do Método dos Lúmens, e pelo software Dialux."
     }
 
 ];
@@ -79,19 +87,19 @@ var lista = [
         nome: "Dr. Fernando Sá Cavalcanti",
         curso: 0,
         image: "images/Perfil_Fernando_Cavalcanti.jpg",
-        bio: "Possui Graduação em Arquitetura e Urbanismo pela Universidade Federal de Alagoas (2007), Mestrado em Construção Civil pela Universidade Federal de São Carlos (2010), Doutorado em Arquitetura e Urbanismo pela Universidade de São Paulo (2013) e Curso Técnico em Edificações pelo Centro Federal de Educação Tecnológica de Alagoas (2000). Atualmente e Professor Adjunto da Universidade Federal de Alagoas na área de Linguagem e Representação e desenvolve pesquisa com ênfase em Projeto e Tecnologia de Arquitetura e Urbanismo e Conforto Ambiental, atuando principalmente nos seguintes temas: Projeto Arquitetônico, Ventilação Natural, Desempenho Térmico de Edificações, Arquitetura Bioclimatica e Simulação Computacional."
+        bio: "Possui Graduação em Arquitetura e Urbanismo pela Universidade Federal de Alagoas (2007), Mestrado em Construção Civil pela Universidade Federal de São Carlos (2010), Doutorado em Arquitetura e Urbanismo pela Universidade de São Paulo (2013) e Curso Técnico em Edificações pelo Centro Federal de Educação Tecnológica de Alagoas (2000). Atualmente é Professor Adjunto da Universidade Federal de Alagoas na área de Linguagem e Representação e desenvolve pesquisa com ênfase em Projeto e Tecnologia de Arquitetura e Urbanismo e Conforto Ambiental, atuando principalmente nos seguintes temas: Projeto Arquitetônico, Ventilação Natural, Desempenho Térmico de Edificações, Arquitetura Bioclimática e Simulação Computacional."
     },
     {
         nome: "Dr. Allan Cunha de Barros",
         curso: 1,
         image: "images/alancunha.jpg",
-        bio: "Possui graduação em Engenharia Agronômica pela Universidade Federal de Sergipe (2006) e mestrado e doutorado em Irrigação e Drenagem pela ESALQ-USP ( 2011). Atualmente e professor da Universidade Federal de Alagoas (UFAL). Tem experiência na área de Engenharia Agricola, com ênfase em Irrigação e Drenagem, atuando principalmente nos seguintes temas: qualidade da irrigação, entupimento de emissores, manejo da irrigação, TDR, simulação de crescimento de culturas."
+        bio: "Possui graduação em Engenharia Agronômica pela Universidade Federal de Sergipe (2006) e mestrado e doutorado em Irrigação e Drenagem pela ESALQ-USP ( 2011). Atualmente é professor da Universidade Federal de Alagoas (UFAL). Tem experiência na área de Engenharia Agrícola, com ênfase em Irrigação e Drenagem, atuando principalmente nos seguintes temas: qualidade da irrigação, entupimento de emissores, manejo da irrigação, TDR, simulação de crescimento de culturas."
     },
     {
         nome: "Msc. Tania Voronkoff",
         image: "images/Perfil_Tania_Voronkoff.jpg",
         curso: 13,
-        bio: "Possui graduação em Engenharia Civil pela Universidade Federal de Alagoas - UFAL (1984), pos - graduação Latu Sensu em Formação para Docência do Ensino Superior pela Fundação Educacional Jayme de Altavila - FEJAL (2001) e mestrado em Engenharia de Produção, na área de Gestão da Produção do NEP - Nucleo de Engenharia de Produção, da Universidade Federal da Paraiba - UFPB (2009). Lecionou nos Cursos de Engenharia Civil e Engenharia de Produção da Universidade Federal de Alagoas - Campus Sertão, as disciplinas: Engenharia de Produto I, Engenharia de Produto II,Engenharia de Metodos,Gestão de Residuos Solidos e Processos Produtivos . Atualmente é professora do Curso de Engenharia de Pesca da Unidade Penedo - Campus Arapiraca da Universidade Federal de Alagoas onde coordena o Curso de Engenharia de Produção."
+        bio: "Possui graduação em Engenharia Civil pela Universidade Federal de Alagoas - UFAL (1984), pós-graduação Latu Sensu em Formação para Docência do Ensino Superior pela Fundação Educacional Jayme de Altavila - FEJAL (2001) e mestrado em Engenharia de Produção, na área de Gestão da Produção do NEP - Nucleo de Engenharia de Produção, da Universidade Federal da Paraiba - UFPB (2009). Lecionou nos Cursos de Engenharia Civil e Engenharia de Produção da Universidade Federal de Alagoas - Campus Sertão, as disciplinas: Engenharia de Produto I, Engenharia de Produto II, Engenharia de Metodos, Gestão de Residuos Solidos e Processos Produtivos. Atualmente é professora do Curso de Engenharia de Pesca da Unidade Penedo - Campus Arapiraca da Universidade Federal de Alagoas onde coordena o Curso de Engenharia de Produção."
     },
     {
         nome: "Msc. Christiano Varady",
@@ -114,25 +122,25 @@ var lista = [
         nome: "Dr. Juliane Marques",
         curso: 3,
         image: "images/Juliane_Marques_QEXTC1O.jpg",
-        bio: "Possui graduação em Engenharia Civil pela Universidade Federal de Alagoas, mestrado em Engenharia Civil - USP - Escola de Engenharia de São Carlos e doutorado em Engenharia Civil pela Escola Politecnica da Universidade de São Paulo. Atualmente e professora adjunto A da Universidade Federal de Alagoas - UFAL, e responsavel tecnico da AGM Geotecnica Ltda. Tem experiência na área de Engenharia Civil, com ênfase em Engenharia de Solos / Geotecnia, atuando principalmente nos seguintes temas: fundações profundas e fundações superficiais, estacas moldadas in loco com bulbos, estacas escavadas a seco com aneis, provas de carga, reforco de fundações, instrumentação em profundidade e pratica de fundações."
+        bio: "Possui graduação em Engenharia Civil pela Universidade Federal de Alagoas, mestrado em Engenharia Civil - USP - Escola de Engenharia de São Carlos e doutorado em Engenharia Civil pela Escola Politecnica da Universidade de São Paulo. Atualmente é professora adjunto A da Universidade Federal de Alagoas - UFAL, e responsavel tecnico da AGM Geotecnica Ltda. Tem experiência na área de Engenharia Civil, com ênfase em Engenharia de Solos / Geotecnia, atuando principalmente nos seguintes temas: fundações profundas e fundações superficiais, estacas moldadas in loco com bulbos, estacas escavadas a seco com aneis, provas de carga, reforco de fundações, instrumentação em profundidade e pratica de fundações."
     },
     {
         nome: "Msc. Alexandre Nascimento de Lima",
         curso: 4,
         image: "images/Alexandre_Lima_3muXQPc_OkXylbk.jpg",
-        bio: "Possui graduação em Engenharia Civil pela Universidade Federal de Alagoas e Mestrado em Engenharia Civil área Estruturas. Atualmente e Professor Assistente na área de Materiais da Universidade Federal de Alagoas, no Campus do Sertão. Tem experiência na área de Engenharia Civil, com ênfase em Materiais e Componentes de Construção e estruturas de concreto armado. Atualmente e Coordenador do Curso de Engenharia de Produção do Campus do Sertão."
+        bio: "Possui graduação em Engenharia Civil pela Universidade Federal de Alagoas e Mestrado em Engenharia Civil área Estruturas. Atualmente é Professor Assistente na área de Materiais da Universidade Federal de Alagoas, no Campus do Sertão. Tem experiência na área de Engenharia Civil, com ênfase em Materiais e Componentes de Construção e estruturas de concreto armado. Atualmente é Coordenador do Curso de Engenharia de Produção do Campus do Sertão."
     },
     {
         nome: "Msc. Viviane Regina Costa",
         curso: 12,
         image: "images/Viviane_Costa.jpg",
-        bio: "Graduada em Arquitetura e Urbanismo pela Universidade Federal de Alagoas (2006). Mestra em Arquitetura e Urbanismo pelo programa de Pos-Graduação em Dinamicas do Espaco Habitado da Faculdade de Arquitetura e Urbanismo da Universidade Federal de Alagoas (2008). Doutoranda em Arquitetura e Urbanismo no Programa Dinamicas do Espaco Habitado da Faculdade de Arquitetura e Urbanismo da Universidade Federal de Alagoas.Professora do Eixo de Tecnologia da Universidade Federal de Alagoas do Campus do Sertão. Pesquisadora do Grupo de Pesquisa Morfologia dos Espacos de Uso Publico. Tem experiência na área de Arquitetura e Urbanismo, atuando principalmente nos seguintes temas: sistemas de espaços livres; espaços urbanos de uso publico; apropriação dos espaços, intervenção urbana, centralidades urbanas e áreas de atividades multiplas."
+        bio: "Graduada em Arquitetura e Urbanismo pela Universidade Federal de Alagoas (2006). Mestra em Arquitetura e Urbanismo pelo programa de Pós-Graduação em Dinâmicas do Espaço Habitado da Faculdade de Arquitetura e Urbanismo da Universidade Federal de Alagoas (2008). Doutoranda em Arquitetura e Urbanismo no Programa Dinâmicas do Espaço Habitado da Faculdade de Arquitetura e Urbanismo da Universidade Federal de Alagoas. Professora do Eixo de Tecnologia da Universidade Federal de Alagoas do Campus do Sertão. Pesquisadora do Grupo de Pesquisa Morfologia dos Espacos de Uso Público. Tem experiência na área de Arquitetura e Urbanismo, atuando principalmente nos seguintes temas: sistemas de espaços livres; espaços urbanos de uso público; apropriação dos espaços, intervenção urbana, centralidades urbanas e áreas de atividades multiplas."
     },
     {
         nome: "Dr. Aline Ramos",
         curso: 5,
         image: "images/Aline_Ramos_nM5yXAJ.jpg",
-        bio: "Possui graduação em Engenharia Civil pela Universidade Federal de Alagoas (1987), mestrado em Engenharia Civil (Engenharia de Estruturas) pela Universidade de São Paulo (1992) e doutorado em Engenharia Civil (Engenharia de Estruturas) pela Universidade de São Paulo (2002). Atualmente e professor associado da Universidade Federal de Alagoas, e desenvolve pesquisas nas linhas: mecânica das estruturas, estruturas de concreto (moldado no local e pré-moldado), coordenação modular e habitação de interesse social. Participou da fundação da Associação Rede Metrologica de Alagoas-RMAL, atuou como Diretora Técnica e atualmente exerce o cargo de Presidente da mesma. Exerce ainda o cargo de Presidente do Instituto de Desenvolvimento Cientifico e Tecnologico de Alagoas-ICTAL, orgão responsável pela gestão do Parque Tecnológico de Alagoas."
+        bio: "Possui graduação em Engenharia Civil pela Universidade Federal de Alagoas (1987), mestrado em Engenharia Civil (Engenharia de Estruturas) pela Universidade de São Paulo (1992) e doutorado em Engenharia Civil (Engenharia de Estruturas) pela Universidade de São Paulo (2002). Atualmente é professor associado da Universidade Federal de Alagoas, e desenvolve pesquisas nas linhas: mecânica das estruturas, estruturas de concreto (moldado no local e pré-moldado), coordenação modular e habitação de interesse social. Participou da fundação da Associação Rede Metrologica de Alagoas-RMAL, atuou como Diretora Técnica e atualmente exerce o cargo de Presidente da mesma. Exerce ainda o cargo de Presidente do Instituto de Desenvolvimento Cientifico e Tecnologico de Alagoas-ICTAL, orgão responsável pela gestão do Parque Tecnológico de Alagoas."
     },
     {
         nome: "Dr. Antonio Netto",
@@ -174,19 +182,19 @@ var lista = [
         nome: "Dr. Eduardo Lucena",
         curso: 10,
         image: "images/Eduardo_Amorim_hIcegVF.png",
-        bio: "Possui graduação em Engenharia Civil pela Universidade Federal de Alagoas-UFAL (2005), mestrado em Engenharia Hidráulica e Saneamento pela Escola de Engenharia de São Carlos (EESC) da Universidade de São Paulo-USP (2007) e doutorado em Engenharia Hidráulica e Saneamento pela Universidade de São Paulo (2009). Atualmente é professor adjunto e coordenador do curso de Engenharia Ambiental e Sanitaria e pesquisador do Centro de Tecnologia da Universidade Federal de Alagoas(UFAL). Responsavel pelas disciplinas de Avaliação de Impacto Ambiental, Análise de Risco e Tratamento de Efluentes. e professor do programas de pos-graduação em Recursos Hidricos e Saneamento do Centro de Tecnologia e Energia da Biomassa do Centro de Ciências Agrarias da UFAL. Revisor de periodico da International Journal of Hydrogen Energy, Journal of Chemical Technology and Biotechnology e REGA Revista de Gestão de aguas da America Latina. Tem experiência na área de Engenharia Hidraulica e Saneamento, com ênfase em Tratamento de águas Residuárias, atuando principalmente nos seguintes temas: tratamento anaeróbio de águas residuárias contendo compostos tóxicos (fenol), reator de anaeróbio de leito fluidificado, produção biológica de hidrogênio a partir de águas residuárias e produção de bionergia. "
+        bio: "Possui graduação em Engenharia Civil pela Universidade Federal de Alagoas-UFAL (2005), mestrado em Engenharia Hidráulica e Saneamento pela Escola de Engenharia de São Carlos (EESC) da Universidade de São Paulo-USP (2007) e doutorado em Engenharia Hidráulica e Saneamento pela Universidade de São Paulo (2009). Atualmente é professor adjunto e coordenador do curso de Engenharia Ambiental e Sanitaria e pesquisador do Centro de Tecnologia da Universidade Federal de Alagoas(UFAL). Responsavel pelas disciplinas de Avaliação de Impacto Ambiental, Análise de Risco e Tratamento de Efluentes, e professor do programas de pos-graduação em Recursos Hidricos e Saneamento do Centro de Tecnologia e Energia da Biomassa do Centro de Ciências Agrarias da UFAL. Revisor de periodico da International Journal of Hydrogen Energy, Journal of Chemical Technology and Biotechnology e REGA Revista de Gestão de aguas da America Latina. Tem experiência na área de Engenharia Hidraulica e Saneamento, com ênfase em Tratamento de águas Residuárias, atuando principalmente nos seguintes temas: tratamento anaeróbio de águas residuárias contendo compostos tóxicos (fenol), reator de anaeróbio de leito fluidificado, produção biológica de hidrogênio a partir de águas residuárias e produção de bionergia. "
     },
     {
         nome: "Msc. Felipe Souza",
         curso: 14,
         image: "images/Felipe_Souza.jpg",
-        bio: "Possui graduação (2007) e mestrado (2010) em Engenharia de Produção pela Universidade Federal de Pernambuco. Atualmente e Professor Assistente de Metodos Quantitativos e Gestão de Operações na Faculdade de Economia, Administração e Contabilidade da Universidade Federal de Alagoas."
+        bio: "Possui graduação (2007) e mestrado (2010) em Engenharia de Produção pela Universidade Federal de Pernambuco. Atualmente é Professor Assistente de Metodos Quantitativos e Gestão de Operações na Faculdade de Economia, Administração e Contabilidade da Universidade Federal de Alagoas."
     },
 
     {
         nome: "Msc. Elvys Soares",
         image: "images/elvys_cortada_GXwj38E.jpg",
-        bio: "Possui graduação em Bacharelado em Ciência da Computação pela Universidade Federal de Alagoas (2004), formação complementar em Analise de Testes, promovida pela Universidade Federal de Pernambuco em parceria com a Motorola (2005) e mestrado em Modelagem Computacional de Conhecimento pela Universidade Federal de Alagoas (2009). Atualmente e professor do Instituto Federal de Educação, Ciência e Tecnologia de Alagoas. Tem experiência na área de Ciência da Computação, com ênfase em Engenharia de Software e Inteligência Artificial."
+        bio: "Possui graduação em Bacharelado em Ciência da Computação pela Universidade Federal de Alagoas (2004), formação complementar em Analise de Testes, promovida pela Universidade Federal de Pernambuco em parceria com a Motorola (2005) e mestrado em Modelagem Computacional de Conhecimento pela Universidade Federal de Alagoas (2009). Atualmente é professor do Instituto Federal de Educação, Ciência e Tecnologia de Alagoas. Tem experiência na área de Ciência da Computação, com ênfase em Engenharia de Software e Inteligência Artificial."
     },
     {
         nome: "João Constantino",
@@ -195,10 +203,21 @@ var lista = [
     },
     {
         nome: "STARTUP ENG",
-        image: "images/logo_startup_eng.png",
+        image: "images/5.jpg",
         bio: "O Evento STARTUP ENG 2015 não é um concurso, mas sim um desafio de projetos de startups para empreendedores que desejam desenvolver suas ideias e lançar produtos comercialmente viáveis no ramo da Engenharia. O Evento tem como objetivo diagnosticar problemas reais que afetam as diversas áreas das Engenharias e propor ideias e soluções tecnológicas e o empreendedorismo digital. Para tal, pesquisadores, professores, representantes governamentais, empreendedores e instituições não governamentais atuarão num ecossistema de integração que alie a ciência, inovação e empreendedorismo em prol de soluções de qualidade. \n A participação e o envio de projetos são livres a todos os interessados e inscritos na SEMENGE 2015 e deverá ocorrer no período das 00:00h do dia 30/10/15 às 23:59h do dia 20/11/15. Os aprovados serão divulgados no site oficial do evento e demais recursos de mídia escolhidos pela comissão organizadora e fará uma apresentação para uma banca de jurados renomada no contexto das engenharias e Startups. Haverá premiação para os primeiros colocados."
+    },
+    {
+        nome:"MSc. Lígia Lobo",
+        curso: 17,
+        image: "images/Ligia_Lobo.jpg",
+        bio: "Graduada em Engenharia de Produção Mecânica pela Universidade Regional do Cariri - URCA, concluído em 8 de Maio de 2009. Especialista em Qualidade Industrial pela Universidad Nacional de General San Martín - UNSAM, concluído em 29 de Dezembro de 2012. Mestre em Qualidade Industrial pela Universidad Nacional de General San Martín - UNSAM, concluído em 11 de Abril de 2013. "
+    },
+    {
+        nome:"MSc. Wellinsílvio Costa",
+        curso: 18,
+        image: "images/Wellinsilvio.jpg",
+        bio: "Atualmente é aluno de doutorado em Sistemas de Potência do curso de Engenharia Elétrica na Universidade Federal de Campina Grande. Tem experiência na área de Sistemas Elétricos de Potência, atuando principalmente nos seguintes temas: simulação de sistemas elétricos de potência, modelagem e diagnóstico de faltas."
     }
-
 ];
 
 
@@ -267,6 +286,10 @@ $(document).delegate("#view_item", "pageinit", function () {
             $.mobile.changePage("view_curse.html", {role: "dialog"});
         }
     });
+});
+
+$(document).delegate("#view_forum", "pageinit", function(){
+
 });
 
 // esta função refresh lista e delega metodo de click para cada item.
