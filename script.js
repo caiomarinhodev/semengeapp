@@ -226,7 +226,7 @@ var lista = [
         nome: "MSc. Raniere Lira",
         curso: 19,
         image: "images/Raniere.jpg",
-        bio: ""
+        bio: "Possui graduação em Engenharia Química pela Universidade Federal de Campina Grande (2002) e mestrado em Engenharia Química pela Universidade Federal de Campina Grande (2004). Tem experiência na área de Engenharia Química, com ênfase em Processo de Dessalinização Via Osmose Inversa, atuando principalmente nos seguintes temas: projeto, instalação e manutenção de dessalinizadores via osmose inversa. Professor da área de Fenômenos de Transporte e Transferência da Universidade Federal de Alagoas - Campus Sertão - UFAL (2011)."
     }
 ];
 
