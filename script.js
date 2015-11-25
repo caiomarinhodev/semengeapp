@@ -79,6 +79,10 @@ var curses = [
     {
         titulo: "Projeto Luminotécnico pelo método dos Lúmens e pelo Software DIALux",
         descricao: "O projeto luminotécnico e a verificação de iluminação em ambientes sofreram mudanças com a criação NBR ISSO 8995-1. O minicurso tem o objetivo de detalhar essas mudanças, e realizar o projeto à partir do Método dos Lúmens, e pelo software Dialux."
+    },
+    {
+        titulo: "Processos de separação por membranas",
+        descricao: "Os processos de separação por membranas têm encontrado um rápido desenvolvimento, principalmente devido ao fato da maioria das separações ocorrerem sem mudança de fase, sendo energeticamente vantajosos, e apresentarem um produto final de alta qualidade. Uma membrana é um filme que separa duas fases atuando como uma barreira seletiva entre as fases e com capacidade de transportar determinados componentes. No minicurso, serão abordados os processos que utilizam o gradiente de pressão como força motriz para promover a separação: microfiltração, ultrafiltração, nanofiltração e osmose inversa. Público-alvo: Acadêmicos e profissionais de engenharia."
     }
 
 ];
@@ -217,6 +221,12 @@ var lista = [
         curso: 18,
         image: "images/Wellinsilvio.jpg",
         bio: "Atualmente é aluno de doutorado em Sistemas de Potência do curso de Engenharia Elétrica na Universidade Federal de Campina Grande. Tem experiência na área de Sistemas Elétricos de Potência, atuando principalmente nos seguintes temas: simulação de sistemas elétricos de potência, modelagem e diagnóstico de faltas."
+    },
+    {
+        nome: "MSc. Raniere Lira",
+        curso: 19,
+        image: "images/Raniere.jpg",
+        bio: ""
     }
 ];
 
